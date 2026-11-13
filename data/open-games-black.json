@@ -1,0 +1,52 @@
+[
+  {
+    "id": "two-knights-black",
+    "name": "Two Knights Defense (as Black)",
+    "eco": "C55–C59",
+    "side": "b",
+    "family": "Open Games (1.e4 e5)",
+    "level": "Intermediate",
+    "desc": "Meet the Italian with the active 3...Nf6. Learn to survive 4.Ng5 with the main line 5...Na5, handle the quiet 4.d3, the sharp 4.d4 lines and the fork trick against 4.Nc3.",
+    "lines": [
+      { "name": "4.Ng5 main line 5...Na5", "moves": "1.e4 e5 2.Nf3 Nc6 3.Bc4 Nf6 {The Two Knights: counter-attacking e4.} 4.Ng5 d5 {The only good defense.} 5.exd5 Na5 {Never 5...Nxd5? 6.Nxf7! — the Fried Liver.} 6.Bb5+ c6 7.dxc6 bxc6 8.Be2 h6 {Kicking the knight.} 9.Nf3 e4 10.Ne5 Bd6 {Excellent compensation for the pawn: space and development.}" },
+      { "name": "4.Ng5 6.d3 (Kieseritzky)", "moves": "1.e4 e5 2.Nf3 Nc6 3.Bc4 Nf6 4.Ng5 d5 5.exd5 Na5 6.d3 h6 7.Nf3 e4 8.Qe2 Nxc4 {Grabbing the bishop pair.} 9.dxc4 Bc5 {Rapid development compensates for the pawn.}" },
+      { "name": "Quiet 4.d3", "moves": "1.e4 e5 2.Nf3 Nc6 3.Bc4 Nf6 4.d3 Be7 {A solid setup.} 5.O-O O-O 6.Re1 d6 7.c3 Na5 {Hunting the Italian bishop.} 8.Bb5 a6 9.Ba4 b5 10.Bc2 c5 {Gaining queenside space.}" },
+      { "name": "4.d4 exd4 5.O-O (Modern)", "moves": "1.e4 e5 2.Nf3 Nc6 3.Bc4 Nf6 4.d4 exd4 5.O-O Nxe4 {Taking the pawn.} 6.Re1 d5 7.Bxd5 Qxd5 8.Nc3 Qa5 {The queen escapes the pin.} 9.Nxe4 Be6 10.Neg5 O-O-O {Black castles into safety with a good game.}" },
+      { "name": "4.d4 exd4 5.e5", "moves": "1.e4 e5 2.Nf3 Nc6 3.Bc4 Nf6 4.d4 exd4 5.e5 d5 {Counter-attacking the bishop.} 6.Bb5 Ne4 7.Nxd4 Bd7 8.Bxc6 bxc6 9.O-O Be7 {Black has a healthy position.}" },
+      { "name": "4.Nc3 fork trick", "moves": "1.e4 e5 2.Nf3 Nc6 3.Bc4 Nf6 4.Nc3 Nxe4! {The fork trick.} 5.Nxe4 d5 {Forking bishop and knight.} 6.Bd3 dxe4 7.Bxe4 Bd6 {Black has a free and easy game.}" }
+    ]
+  },
+  {
+    "id": "petrov-black",
+    "name": "Petrov's Defense (as Black)",
+    "eco": "C42–C43",
+    "side": "b",
+    "family": "Open Games (1.e4 e5)",
+    "level": "Intermediate",
+    "desc": "The Russian Defense: Black counter-attacks e4 instead of defending e5. Super-solid and loved by elite players. Learn the key move order 3...d6 and how to punish the Cochrane Gambit.",
+    "lines": [
+      { "name": "Classical 5.d4 main line", "moves": "1.e4 e5 2.Nf3 Nf6 3.Nxe5 d6 {First kick the knight! 3...Nxe4? 4.Qe2! is a known trap.} 4.Nf3 Nxe4 5.d4 d5 6.Bd3 Nc6 7.O-O Be7 8.c4 Nb4 {Hitting the d3 bishop.} 9.Be2 O-O 10.Nc3 Bf5 {Solid and active.}" },
+      { "name": "5.Nc3 symmetrical", "moves": "1.e4 e5 2.Nf3 Nf6 3.Nxe5 d6 4.Nf3 Nxe4 5.Nc3 Nxc3 6.dxc3 Be7 7.Be3 Nc6 8.Qd2 Be6 9.O-O-O Qd7 {Mirror castling plans; equal but sharp.}" },
+      { "name": "Cochrane Gambit 4.Nxf7?!", "moves": "1.e4 e5 2.Nf3 Nf6 3.Nxe5 d6 4.Nxf7?! {The Cochrane Gambit: a dubious piece sacrifice.} Kxf7 5.Nc3 c5! {Controlling d4.} 6.Bc4+ Be6 7.Bxe6+ Kxe6 8.d4 Kf7 {The king walks back to safety; Black's extra piece should tell.}" },
+      { "name": "Steinitz 3.d4", "moves": "1.e4 e5 2.Nf3 Nf6 3.d4 Nxe4 4.Bd3 d5 5.Nxe5 Nd7 {Challenging the strong knight.} 6.Nxd7 Bxd7 7.O-O Bd6 8.c4 c6 {Solid and equal.}" },
+      { "name": "Four Knights 3.Nc3", "moves": "1.e4 e5 2.Nf3 Nf6 3.Nc3 Nc6 4.d4 exd4 5.Nxd4 Bb4 6.Nxc6 bxc6 7.Bd3 d5 8.exd5 cxd5 9.O-O O-O {Active pieces for Black.}" },
+      { "name": "Boden-Kieseritzky 3.Bc4", "moves": "1.e4 e5 2.Nf3 Nf6 3.Bc4 Nxe4 4.Nc3 Nxc3 5.dxc3 f6 {Holding e5 solidly; don't let White's lead in development scare you.}" }
+    ]
+  },
+  {
+    "id": "stafford-gambit",
+    "name": "Stafford Gambit (as Black)",
+    "eco": "C42",
+    "side": "b",
+    "family": "Gambits & Traps",
+    "level": "Beginner",
+    "desc": "A tricky gambit from the Petrov: Black sacrifices the e-pawn for quick development and a minefield of traps. Objectively dubious, but deadly in blitz. Learn every trap and the natural mistakes White makes.",
+    "lines": [
+      { "name": "Trap: 6.Bg5?? Nxe4! mate", "moves": "1.e4 e5 2.Nf3 Nf6 3.Nxe5 Nc6!? {The Stafford Gambit.} 4.Nxc6 dxc6 {Recapture towards the center, opening the bishop and queen.} 5.d3 Bc5 {Aiming at f2.} 6.Bg5?? {Pinning the knight... or so White thinks.} Nxe4! {The queen sacrifice!} 7.Bxd8 Bxf2+ 8.Ke2 Bg4# {Checkmate!}" },
+      { "name": "Trap: 6.Bg5 Nxe4 7.dxe4", "moves": "1.e4 e5 2.Nf3 Nf6 3.Nxe5 Nc6 4.Nxc6 dxc6 5.d3 Bc5 6.Bg5?? Nxe4! 7.dxe4 Bxf2+! {Deflecting the king from the d-file.} 8.Kxf2 Qxd1 {Black wins the queen.}" },
+      { "name": "Trap: 5.e5 Ne4 6.d4 Qh4", "moves": "1.e4 e5 2.Nf3 Nf6 3.Nxe5 Nc6 4.Nxc6 dxc6 5.e5 Ne4 {The knight is strong on e4.} 6.d4 Qh4 {Threatening ...Qxf2#.} 7.g3? Nxg3! 8.fxg3 Qe4+ {A fork on the long diagonal.} 9.Qe2 Qxh1 {Black wins the rook.}" },
+      { "name": "Trap: 6.Be2 h5 7.O-O? Ng4", "moves": "1.e4 e5 2.Nf3 Nf6 3.Nxe5 Nc6 4.Nxc6 dxc6 5.d3 Bc5 6.Be2 h5 {Preparing ...Ng4 and opening the h-file.} 7.O-O? Ng4 8.h3? Qd6! {Threatening ...Qh2#.} 9.hxg4 hxg4 {The h-file opens: ...Qh2# is coming and White is lost.}" },
+      { "name": "4.Nf3: regaining the pawn", "moves": "1.e4 e5 2.Nf3 Nf6 3.Nxe5 Nc6 4.Nf3 Nxe4 {Black simply regains the pawn with a free game.}" }
+    ]
+  }
+]

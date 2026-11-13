@@ -1,0 +1,163 @@
+[
+  {
+    "id": "italian-game",
+    "name": "Italian Game",
+    "eco": "C50–C54",
+    "side": "w",
+    "family": "Open Games (1.e4 e5)",
+    "level": "Beginner",
+    "desc": "One of the oldest openings. White develops the bishop to c4 aiming at f7, then builds a slow but powerful center with c3 and d3/d4. Learn the main Giuoco Piano plans and how to punish Black's traps and dubious tries.",
+    "lines": [
+      { "name": "Giuoco Pianissimo: main plan", "moves": "1.e4 {Grabbing the center and opening lines for the queen and bishop.} e5 2.Nf3 {Developing with an attack on e5.} Nc6 3.Bc4 {The Italian bishop eyes f7, the weakest point in Black's camp.} Bc5 4.c3 {Preparing d4 and giving the bishop a retreat square.} Nf6 5.d3 {The modern slow approach: solid and full of ideas.} d6 6.O-O O-O 7.h3 {Stopping ...Bg4 before it happens.} a6 8.Re1 Ba7 9.Nbd2 {The knight heads for f1-g3, a classic Italian maneuver.}" },
+      { "name": "Two Knights: 4.d3 quiet system", "moves": "1.e4 e5 2.Nf3 Nc6 3.Bc4 Nf6 4.d3 {Defending e4 calmly and avoiding the wild 4.Ng5 lines.} Be7 5.O-O O-O 6.Re1 d6 7.c3 Na5 {Chasing the strong bishop.} 8.Bb5 {The bishop dodges the trade and will drop back to a4-c2.} a6 9.Ba4 b5 10.Bc2 {The bishop survives on the b1-h7 diagonal.}" },
+      { "name": "Two Knights: 4...Bc5 transposition", "moves": "1.e4 e5 2.Nf3 Nc6 3.Bc4 Nf6 4.d3 Bc5 5.c3 d6 6.O-O O-O 7.Re1 a6 8.Bb3 Ba7 9.h3 {Same structure as the Pianissimo: patience and maneuvering.}" },
+      { "name": "Hungarian Defense 3...Be7", "moves": "1.e4 e5 2.Nf3 Nc6 3.Bc4 Be7 {The Hungarian: solid but passive.} 4.d4 {Against a passive setup, open the center at once.} exd4 5.Nxd4 Nf6 6.Nc3 O-O 7.O-O d6 8.h3 {White enjoys more space and easy development.}" },
+      { "name": "Semi-Italian 3...d6 4...Bxf3", "moves": "1.e4 e5 2.Nf3 Nc6 3.Bc4 d6 4.Nc3 Bg4 5.h3 {Asking the bishop a question.} Bxf3 6.Qxf3 Nf6 7.d3 {White has the bishop pair and a comfortable game.}" },
+      { "name": "Legal's Mate trap", "moves": "1.e4 e5 2.Nf3 Nc6 3.Bc4 d6 4.Nc3 Bg4 5.h3 Bh5? {Keeping the pin looks natural, but it allows a famous combination.} 6.Nxe5! {Sacrificing the queen!} Bxd1?? {Taking the queen loses immediately.} 7.Bxf7+ Ke7 8.Nd5# {Legal's Mate: three minor pieces checkmate the king.}" },
+      { "name": "Legal's trap: 6...Nxe5", "moves": "1.e4 e5 2.Nf3 Nc6 3.Bc4 d6 4.Nc3 Bg4 5.h3 Bh5? 6.Nxe5! Nxe5 {The best Black can do.} 7.Qxh5 Nxc4 8.Qb5+ {Forking king and knight.} c6 9.Qxc4 {White is a clean pawn up.}" },
+      { "name": "Blackburne Shilling Gambit 3...Nd4?!", "moves": "1.e4 e5 2.Nf3 Nc6 3.Bc4 Nd4?! {The Blackburne Shilling trap. If 4.Nxe5?? Qg5! Black wins material.} 4.Nxd4! {Simply trade off the annoying knight.} exd4 5.O-O {Develop and castle; c3 will open lines.} d6 6.c3 dxc3 7.Nxc3 {White leads in development and dominates the center.}" },
+      { "name": "Rousseau Gambit 3...f5?!", "moves": "1.e4 e5 2.Nf3 Nc6 3.Bc4 f5?! {Weakens the a2-g8 diagonal and Black's king.} 4.d3 {Calm: keep e4 and let Black's weaknesses speak.} Nf6 5.Nc3 Bb4 6.O-O Bxc3 7.bxc3 d6 8.exf5 {White has the bishop pair and Black's center is loose.}" }
+    ]
+  },
+  {
+    "id": "ruy-lopez",
+    "name": "Ruy Lopez (Spanish Opening)",
+    "eco": "C60–C99",
+    "side": "w",
+    "family": "Open Games (1.e4 e5)",
+    "level": "Intermediate",
+    "desc": "The king of 1.e4 e5 openings. White pressures the c6 knight, the key defender of e5, and builds long-term pressure. You will learn the Closed main line plus answers to the Berlin, Marshall, Schliemann, Bird, Classical, Steinitz and more.",
+    "lines": [
+      { "name": "Closed Ruy Lopez: Chigorin", "moves": "1.e4 e5 2.Nf3 Nc6 3.Bb5 {The Spanish: pressure on the knight that defends e5.} a6 {The Morphy Defense, Black's most popular reply.} 4.Ba4 {Keeping the pin. 4.Bxc6 is the Exchange Variation.} Nf6 5.O-O {Castling first: e4 is indirectly protected.} Be7 6.Re1 {Now Bxc6 followed by Nxe5 is a real threat.} b5 7.Bb3 d6 8.c3 {Preparing d4 and a retreat square on c2 for the bishop.} O-O 9.h3 {Preventing ...Bg4 before playing d4.} Na5 10.Bc2 c5 11.d4 {The classical Chigorin structure.}" },
+      { "name": "Marshall Attack", "moves": "1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 O-O 8.c3 d5 {The Marshall Gambit: Black sacrifices a pawn for a kingside attack.} 9.exd5 {Accepting the challenge.} Nxd5 10.Nxe5 Nxe5 11.Rxe5 c6 12.d4 {Bringing the bishop into defense.} Bd6 13.Re1 Qh4 14.g3 Qh3 15.Be3 {The main line: White must defend accurately but keeps the pawn.}" },
+      { "name": "Open Ruy Lopez 5...Nxe4", "moves": "1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Nxe4 {The Open Defense: Black grabs the pawn.} 6.d4 {Opening the center while Black's king is still uncastled.} b5 7.Bb3 d5 8.dxe5 Be6 9.c3 {Main line: a solid home for the bishop and a strong e5 pawn.}" },
+      { "name": "Berlin Defense: Berlin endgame", "moves": "1.e4 e5 2.Nf3 Nc6 3.Bb5 Nf6 {The Berlin Wall, made famous by Kramnik.} 4.O-O Nxe4 5.d4 {Hitting the center to regain the pawn.} Nd6 6.Bxc6 dxc6 7.dxe5 Nf5 8.Qxd8+ Kxd8 9.Nc3 {The Berlin endgame: White has a kingside majority, Black the bishop pair.}" },
+      { "name": "Berlin: Rio de Janeiro 5...Be7", "moves": "1.e4 e5 2.Nf3 Nc6 3.Bb5 Nf6 4.O-O Nxe4 5.d4 Be7 6.Qe2 {Pinning the knight on the e-file.} Nd6 7.Bxc6 bxc6 8.dxe5 Nb7 9.Nc3 {White has a lead in development and a strong e5 pawn.}" },
+      { "name": "Schliemann Gambit 3...f5", "moves": "1.e4 e5 2.Nf3 Nc6 3.Bb5 f5 {The aggressive Schliemann (Jaenisch) Gambit.} 4.Nc3 {The most testing: develop and hit e4.} fxe4 5.Nxe4 d5 6.Nxe5! {A typical counter-blow.} dxe4 7.Nxc6 Qg5 8.Qe2 Nf6 9.f4 {Main line: kicking the queen; White is better.}" },
+      { "name": "Bird's Defense 3...Nd4", "moves": "1.e4 e5 2.Nf3 Nc6 3.Bb5 Nd4 {Bird's Defense: trading knights to gain time.} 4.Nxd4 exd4 5.O-O c6 6.Bc4 Nf6 7.Re1 d6 8.c3 {White removes the d4 wedge and has a strong center.}" },
+      { "name": "Classical Defense 3...Bc5", "moves": "1.e4 e5 2.Nf3 Nc6 3.Bb5 Bc5 4.c3 {Preparing d4 with tempo on the bishop.} Nf6 5.O-O O-O 6.d4 Bb6 7.Bg5 {Pinning the knight and increasing pressure on e5.}" },
+      { "name": "Steinitz Defense: main line", "moves": "1.e4 e5 2.Nf3 Nc6 3.Bb5 d6 {The old Steinitz Defense: solid but cramped.} 4.d4 Bd7 5.Nc3 Nf6 6.O-O Be7 7.Re1 exd4 8.Nxd4 {White has more space; Black is passive.}" },
+      { "name": "Tarrasch Trap 7...O-O?", "moves": "1.e4 e5 2.Nf3 Nc6 3.Bb5 d6 4.d4 Bd7 5.Nc3 Nf6 6.O-O Be7 7.Re1 O-O? {Natural, but a famous mistake.} 8.Bxc6! Bxc6 9.dxe5 dxe5 10.Qxd8 Raxd8 11.Nxe5 {Winning the e5 pawn.} Bxe4 12.Nxe4 Nxe4 13.Nd3! {Pinning tricks on the e-file.} f5 14.f3 Bc5+ 15.Nxc5 Nxc5 16.Bg5 {Winning the exchange: the rook on d8 and the e7 square are hit.}" },
+      { "name": "Modern Steinitz 4...d6", "moves": "1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 d6 {The Modern Steinitz. Beware Noah's Ark trap after an early d4.} 5.c3 {Preparing d4 safely.} Bd7 6.d4 Nf6 7.O-O Be7 8.Re1 O-O 9.Nbd2 {A classical setup with a solid center.}" },
+      { "name": "Cozio Defense 3...Nge7", "moves": "1.e4 e5 2.Nf3 Nc6 3.Bb5 Nge7 {The Cozio: the knight supports c6.} 4.O-O g6 5.c3 Bg7 6.d4 exd4 7.cxd4 d5 8.exd5 Nxd5 9.Re1+ Be6 10.Bg5 {Developing with tempo against the queen.}" }
+    ]
+  },
+  {
+    "id": "scotch-game",
+    "name": "Scotch Game",
+    "eco": "C44–C45",
+    "side": "w",
+    "family": "Open Games (1.e4 e5)",
+    "level": "Intermediate",
+    "desc": "White strikes in the center immediately with 3.d4, opening the game and getting free development. A favourite of Kasparov. Learn the Classical, Schmidt/Mieses and Steinitz lines, and how to punish early inaccuracies.",
+    "lines": [
+      { "name": "Classical 4...Bc5 5.Nxc6", "moves": "1.e4 e5 2.Nf3 Nc6 3.d4 {The Scotch: immediately challenging the center.} exd4 4.Nxd4 Bc5 5.Nxc6 {Kasparov's favourite: removing the knight before ...Qf6 hits f2.} Qf6 6.Qd2 {Defending f2 and covering d4.} dxc6 7.Nc3 Be6 8.Na4 {Hunting the bishop pair.}" },
+      { "name": "Mieses Variation 4...Nf6", "moves": "1.e4 e5 2.Nf3 Nc6 3.d4 exd4 4.Nxd4 Nf6 5.Nxc6 bxc6 6.e5 {Kicking the knight away from the center.} Qe7 7.Qe2 Nd5 8.c4 {Chasing the knight again.} Ba6 9.b3 {Solidly defending c4. White has more space.}" },
+      { "name": "Steinitz 4...Qh4", "moves": "1.e4 e5 2.Nf3 Nc6 3.d4 exd4 4.Nxd4 Qh4 {Aggressive: hitting e4 and f2.} 5.Nc3 Bb4 6.Be2 {Offering the e4 pawn for rapid development.} Qxe4 7.Nb5 {Hitting c7: White gets strong compensation.} Bxc3+ 8.bxc3 Kd8 9.O-O {Black's king is stuck in the center.}" },
+      { "name": "4...Bb4+ 5.c3", "moves": "1.e4 e5 2.Nf3 Nc6 3.d4 exd4 4.Nxd4 Bb4+ 5.c3 {Gaining time on the bishop.} Bc5 6.Be3 {Black has lost a tempo compared with the Classical.}" },
+      { "name": "Early trade 4...Nxd4?!", "moves": "1.e4 e5 2.Nf3 Nc6 3.d4 exd4 4.Nxd4 Nxd4?! {Helping White centralize the queen.} 5.Qxd4 Nf6 6.Nc3 d6 7.Bc4 Be7 8.Bg5 O-O 9.O-O-O {Opposite-side castling with much more active White pieces.}" },
+      { "name": "3...Nxd4? giving up the center", "moves": "1.e4 e5 2.Nf3 Nc6 3.d4 Nxd4? {A beginner's mistake.} 4.Nxd4 exd4 5.Qxd4 {A dominant queen and a lead in development.}" }
+    ]
+  },
+  {
+    "id": "fried-liver",
+    "name": "Two Knights: Fried Liver & 4.Ng5",
+    "eco": "C57–C59",
+    "side": "w",
+    "family": "Open Games (1.e4 e5)",
+    "level": "Beginner",
+    "desc": "White attacks f7 directly with 4.Ng5. Learn the Fried Liver sacrifice against the natural 5...Nxd5?, the main line with 5...Na5, and how to handle Black's wild counter-gambits: Traxler, Ulvestad and Fritz.",
+    "lines": [
+      { "name": "Main line 5...Na5", "moves": "1.e4 e5 2.Nf3 Nc6 3.Bc4 Nf6 4.Ng5 {Attacking f7 with knight and bishop.} d5 {The only good defense: block the bishop.} 5.exd5 Na5 {Best: Black gives a pawn for activity.} 6.Bb5+ c6 7.dxc6 bxc6 8.Be2 h6 9.Nf3 e4 10.Ne5 Bd6 11.d4 {White keeps the extra pawn; Black has development.}" },
+      { "name": "Fried Liver 5...Nxd5?", "moves": "1.e4 e5 2.Nf3 Nc6 3.Bc4 Nf6 4.Ng5 d5 5.exd5 Nxd5? {Natural but dangerous.} 6.Nxf7! {The Fried Liver sacrifice!} Kxf7 7.Qf3+ {Forking king and knight.} Ke6 {Forced to defend d5.} 8.Nc3 {Piling up on the pinned knight.} Nb4 9.a3 {Kicking the defender.} Nxc2+ 10.Kd1 Nxa1 11.Nxd5 {White's attack is crushing despite the material.}" },
+      { "name": "Traxler 4...Bc5!?", "moves": "1.e4 e5 2.Nf3 Nc6 3.Bc4 Nf6 4.Ng5 Bc5!? {The wild Traxler Counter-Gambit.} 5.Bxf7+ {Safest: grab the pawn and displace the king.} Ke7 6.Bb3 Rf8 7.O-O d6 8.c3 {White is a pawn up with a safer king.}" },
+      { "name": "Ulvestad 5...b5", "moves": "1.e4 e5 2.Nf3 Nc6 3.Bc4 Nf6 4.Ng5 d5 5.exd5 b5 {The Ulvestad: deflecting the bishop.} 6.Bf1! {The best retreat, keeping control of key squares.} Nd4 7.c3 Nxd5 8.cxd4 Qxg5 9.Bxb5+ Kd8 10.Qf3 {White is better: Black's king is exposed.}" },
+      { "name": "Fritz 5...Nd4", "moves": "1.e4 e5 2.Nf3 Nc6 3.Bc4 Nf6 4.Ng5 d5 5.exd5 Nd4 {The Fritz Variation.} 6.c3 {Kicking the knight right away.} b5 7.Bf1 Nxd5 8.cxd4 Qxg5 9.Bxb5+ Kd8 10.Qf3 {Same idea as the Ulvestad: White targets the king.}" }
+    ]
+  },
+  {
+    "id": "kings-gambit",
+    "name": "King's Gambit",
+    "eco": "C30–C39",
+    "side": "w",
+    "family": "Open Games (1.e4 e5)",
+    "level": "Advanced",
+    "desc": "The romantic gambit: White gives the f-pawn to open the f-file and seize the center. Learn the Kieseritzky, the Modern 3...d5, Fischer's Defense and how to meet the Falkbeer, Classical Declined and early queen checks.",
+    "lines": [
+      { "name": "Kieseritzky Gambit", "moves": "1.e4 e5 2.f4 {The King's Gambit.} exf4 3.Nf3 {Stopping ...Qh4+.} g5 {Black holds on to the pawn.} 4.h4 {Undermining the pawn chain at once.} g4 5.Ne5 {The Kieseritzky.} Nf6 6.d4 d6 7.Nd3 Nxe4 8.Bxf4 {White regains the pawn with rapid development.}" },
+      { "name": "Modern Defense 3...d5", "moves": "1.e4 e5 2.f4 exf4 3.Nf3 d5 {Returning the pawn to free the position.} 4.exd5 Nf6 5.Nc3 Nxd5 6.Nxd5 Qxd5 7.d4 Be7 8.c4 {Gaining time on the queen; f4 will be recovered.}" },
+      { "name": "Fischer Defense 3...d6", "moves": "1.e4 e5 2.f4 exf4 3.Nf3 d6 {Fischer's famous recommendation: taking e5 away from the knight.} 4.d4 g5 5.h4 g4 6.Ng1 {The point: the knight retreats and f4 will fall.}" },
+      { "name": "Cunningham 3...Be7", "moves": "1.e4 e5 2.f4 exf4 3.Nf3 Be7 4.Bc4 Nf6 5.e5 {Kicking the knight.} Ng4 6.O-O Nc6 7.d4 {A big center and the f-file.}" },
+      { "name": "Falkbeer Countergambit 2...d5", "moves": "1.e4 e5 2.f4 d5 {The Falkbeer Countergambit.} 3.exd5 e4 4.d3 {Undermining the wedge.} Nf6 5.dxe4 Nxe4 6.Nf3 Bc5 7.Qe2 {Pinning the knight; Black's e4 knight is unstable.}" },
+      { "name": "Classical Declined 2...Bc5", "moves": "1.e4 e5 2.f4 Bc5 {Stopping White from castling kingside.} 3.Nf3 d6 4.c3 {Preparing d4 to blunt the bishop.} Nf6 5.d4 exd4 6.cxd4 Bb4+ 7.Bd2 Bxd2+ 8.Nbxd2 {White has a big center.}" },
+      { "name": "Early queen check 2...Qh4+?!", "moves": "1.e4 e5 2.f4 Qh4+?! {A premature queen sortie.} 3.g3 Qe7 4.Nc3 exf4 5.d4 {Big center and time gained on the queen.}" }
+    ]
+  },
+  {
+    "id": "vienna-game",
+    "name": "Vienna Game & Gambit",
+    "eco": "C25–C29",
+    "side": "w",
+    "family": "Open Games (1.e4 e5)",
+    "level": "Intermediate",
+    "desc": "White develops the queen's knight first, keeping the f4 break in reserve. Learn the Vienna Gambit against 2...Nf6, and how to punish 2...Nc6 3.Bc4 setups with the Qg4 idea.",
+    "lines": [
+      { "name": "Vienna Gambit 3...d5", "moves": "1.e4 e5 2.Nc3 {The Vienna: preparing f4.} Nf6 3.f4 {The Vienna Gambit.} d5 {Best: striking back in the center.} 4.fxe5 Nxe4 5.Nf3 Be7 6.d4 O-O 7.Bd3 f5 8.exf6 Bxf6 9.O-O {Balanced but rich; White has active pieces.}" },
+      { "name": "Vienna Gambit 3...exf4", "moves": "1.e4 e5 2.Nc3 Nf6 3.f4 exf4?! {Accepting allows White a huge center.} 4.e5 {Kicking the knight back home.} Ng8 5.Nf3 d6 6.d4 dxe5 7.Qe2 {Pinning on the e-file and preparing to recapture with the knight or bishop.}" },
+      { "name": "2...Nc6 3.Bc4 Bc5 4.Qg4!", "moves": "1.e4 e5 2.Nc3 Nc6 3.Bc4 Bc5 4.Qg4! {Hitting g7: the most testing move.} Kf8 {Best: protecting g7 at the cost of castling.} 5.Qg3 d6 6.d3 Nf6 7.Bg5 {White is comfortable; Black's king is awkward.}" },
+      { "name": "Vienna trap 4...Qf6?", "moves": "1.e4 e5 2.Nc3 Nc6 3.Bc4 Bc5 4.Qg4 Qf6? {Defending g7 but walking into a fork.} 5.Nd5 {Threatening Nxc7+ and Qxg7. After 5...Qxf2+ 6.Kd1 Black's queen is in trouble.}" },
+      { "name": "2...Bc5 3.Nf3", "moves": "1.e4 e5 2.Nc3 Bc5 3.Nf3 d6 4.d4 exd4 5.Nxd4 Nf6 6.Bg5 h6 7.Bh4 O-O 8.Be2 {A comfortable Open-Game position with more space.}" }
+    ]
+  },
+  {
+    "id": "danish-gambit",
+    "name": "Danish Gambit",
+    "eco": "C21",
+    "side": "w",
+    "family": "Open Games (1.e4 e5)",
+    "level": "Beginner",
+    "desc": "White sacrifices two pawns for a monstrous lead in development and two raking bishops. Know how to handle the refutation attempts with ...d5.",
+    "lines": [
+      { "name": "Accepted: 5...d5 main line", "moves": "1.e4 e5 2.d4 exd4 3.c3 {The Danish Gambit.} dxc3 4.Bc4 cxb2 5.Bxb2 {Two bishops aiming at the kingside.} d5 {Best: returning material to catch up in development.} 6.Bxd5 Nf6 7.Bxf7+ Kxf7 8.Qxd8 Bb4+ 9.Qd2 Bxd2+ 10.Nxd2 {A roughly equal endgame.}" },
+      { "name": "Sørensen Defense 3...d5", "moves": "1.e4 e5 2.d4 exd4 3.c3 d5 {Declining with a central counter.} 4.exd5 Qxd5 5.cxd4 Nc6 6.Nf3 Bg4 7.Be2 {Isolated pawn but free development.}" },
+      { "name": "Greedy 5...Nf6?!", "moves": "1.e4 e5 2.d4 exd4 3.c3 dxc3 4.Bc4 cxb2 5.Bxb2 Nf6?! {Natural but slow.} 6.e5 {Kicking the knight; the attack rolls.} Bb4+ 7.Nc3 Qe7 8.Ne2 Ng4 9.O-O {Huge development lead for the pawns.}" }
+    ]
+  },
+  {
+    "id": "evans-gambit",
+    "name": "Evans Gambit",
+    "eco": "C51–C52",
+    "side": "w",
+    "family": "Open Games (1.e4 e5)",
+    "level": "Intermediate",
+    "desc": "A gambit in the Italian: White gives the b-pawn to gain time with c3 and d4. Learn the 5...Ba5 and 5...Be7 lines and how to meet the declined 4...Bb6.",
+    "lines": [
+      { "name": "Accepted 5...Ba5 6...d6", "moves": "1.e4 e5 2.Nf3 Nc6 3.Bc4 Bc5 4.b4 {The Evans Gambit.} Bxb4 5.c3 {Gaining time and preparing d4.} Ba5 6.d4 d6 7.Qb3 {Hitting f7.} Qd7 8.dxe5 Bb6 9.Nbd2 {Rapid development for the pawn.}" },
+      { "name": "Accepted 6...exd4 7.O-O", "moves": "1.e4 e5 2.Nf3 Nc6 3.Bc4 Bc5 4.b4 Bxb4 5.c3 Ba5 6.d4 exd4 7.O-O Nge7 8.cxd4 d5 9.exd5 Nxd5 10.Ba3 {Preventing Black from castling.}" },
+      { "name": "Accepted 5...Be7", "moves": "1.e4 e5 2.Nf3 Nc6 3.Bc4 Bc5 4.b4 Bxb4 5.c3 Be7 6.d4 Na5 7.Be2 exd4 8.Qxd4 Nf6 9.e5 Nc6 10.Qh4 {A typical attacking setup.}" },
+      { "name": "Declined 4...Bb6", "moves": "1.e4 e5 2.Nf3 Nc6 3.Bc4 Bc5 4.b4 Bb6 {Declining the gambit.} 5.a4 {Gaining queenside space.} a6 6.Nc3 Nf6 7.Nd5 {Strong pressure.}" }
+    ]
+  },
+  {
+    "id": "offbeat-e5-white",
+    "name": "Punishing Offbeat Defenses (2.Nf3)",
+    "eco": "C40–C42",
+    "side": "w",
+    "family": "Open Games (1.e4 e5)",
+    "level": "Beginner",
+    "desc": "After 1.e4 e5 2.Nf3 not everybody plays 2...Nc6. Learn to punish the Damiano, Latvian and Elephant gambits, to beat the Philidor, and to handle the Petrov and the trappy Stafford Gambit.",
+    "lines": [
+      { "name": "Damiano 2...f6? 3...fxe5", "moves": "1.e4 e5 2.Nf3 f6? {The Damiano: weakens the king and takes f6 from the knight.} 3.Nxe5! {A sacrifice that can't be safely accepted.} fxe5? 4.Qh5+ Ke7 5.Qxe5+ Kf7 6.Bc4+ d5 7.Bxd5+ Kg6 8.h4 {Threatening h5+.} h5 9.Bxb7! {Deflecting the bishop: White wins massive material.}" },
+      { "name": "Damiano 3...Qe7", "moves": "1.e4 e5 2.Nf3 f6? 3.Nxe5! Qe7 {Black's best try.} 4.Nf3 Qxe4+ 5.Be2 {White is ahead in development and Black's king is exposed.}" },
+      { "name": "Latvian Gambit 2...f5?!", "moves": "1.e4 e5 2.Nf3 f5?! {The Latvian Gambit: very risky.} 3.Nxe5 Qf6 4.d4 d6 5.Nc4 fxe4 6.Nc3 Qg6 7.f3 {Undermining e4; White is clearly better.}" },
+      { "name": "Elephant Gambit 2...d5?!", "moves": "1.e4 e5 2.Nf3 d5?! {The Elephant Gambit.} 3.exd5 Qxd5 4.Nc3 {Gaining time on the queen, like a Scandinavian with an extra tempo for White.} Qa5 5.Bc4 {White is well ahead in development.}" },
+      { "name": "Philidor 3...Nf6", "moves": "1.e4 e5 2.Nf3 d6 {The Philidor: solid but passive.} 3.d4 Nf6 4.Nc3 Nbd7 5.Bc4 Be7 6.O-O O-O 7.Re1 c6 8.a4 {A classic space advantage.}" },
+      { "name": "Philidor 3...exd4", "moves": "1.e4 e5 2.Nf3 d6 3.d4 exd4 4.Nxd4 Nf6 5.Nc3 Be7 6.Bf4 O-O 7.Qd2 {Preparing queenside castling and a kingside attack.}" },
+      { "name": "Philidor 3...Bg4?! (Morphy's Opera Game)", "moves": "1.e4 e5 2.Nf3 d6 3.d4 Bg4?! {Pins, but gives up the bishop pair.} 4.dxe5 Bxf3 5.Qxf3 dxe5 6.Bc4 Nf6 7.Qb3 {Double attack on f7 and b7, as in Morphy's famous Opera Game.}" },
+      { "name": "Petrov: 3.Nxe5 classical", "moves": "1.e4 e5 2.Nf3 Nf6 {The Petrov (Russian) Defense.} 3.Nxe5 d6 4.Nf3 Nxe4 5.d4 d5 6.Bd3 Nc6 7.O-O Be7 8.c4 {The main line: pressure on d5.}" },
+      { "name": "Petrov copycat 3...Nxe4? 4...Nf6??", "moves": "1.e4 e5 2.Nf3 Nf6 3.Nxe5 Nxe4? {Copying White is a mistake here.} 4.Qe2! {Pinning the knight.} Nf6?? {Retreating walks into a discovered attack.} 5.Nc6+ {Discovered check: the queen on d8 falls.}" },
+      { "name": "Petrov copycat 4...Qe7", "moves": "1.e4 e5 2.Nf3 Nf6 3.Nxe5 Nxe4? 4.Qe2! Qe7 5.Qxe4 d6 6.d4 dxe5 7.dxe5 {White is a clean pawn up.}" },
+      { "name": "Stafford Gambit: safe antidote", "moves": "1.e4 e5 2.Nf3 Nf6 3.Nxe5 Nc6 {The trappy Stafford Gambit.} 4.Nxc6 dxc6 5.d3 {Solid: protecting e4. Beware 6.Bg5?? Nxe4!} Bc5 6.Be2 {Covering g4 and d1; no tricks for Black.} h5 7.c3 {Preparing d4 to blunt the bishop; never play h3 carelessly.}" }
+    ]
+  }
+]

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Opening Forge — Chess Opening Trainer</title>
+  <meta name="description" content="Learn chess openings interactively: every book variation, including the bad moves your opponent might play, with Best / Book / Mistake flags.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>♞</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="vendor/chessground.base.css">
+  <link rel="stylesheet" href="vendor/chessground.brown.css">
+  <link rel="stylesheet" href="vendor/chessground.cburnett.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#/"><span class="brand-icon">♞</span> Opening Forge</a>
+    <nav class="nav">
+      <a href="#/" data-nav="home">Home</a>
+      <a href="#/openings" data-nav="openings">Learn an opening</a>
+      <a href="#/random" data-nav="random" class="nav-random">🎲 Random opening</a>
+    </nav>
+  </header>
+  <main id="app"><div class="loading">Loading openings…</div></main>
+  <div id="modal-root"></div>
+  <footer class="footer">
+    Board by <a href="https://github.com/lichess-org/chessground" target="_blank" rel="noopener">chessground</a> ·
+    rules by <a href="https://github.com/jhlywa/chess.js" target="_blank" rel="noopener">chess.js</a> ·
+    progress is saved in your browser
+  </footer>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

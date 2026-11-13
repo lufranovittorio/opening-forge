@@ -1,0 +1,100 @@
+[
+  {
+    "id": "kings-indian",
+    "name": "King's Indian Defense",
+    "eco": "E60–E99",
+    "side": "b",
+    "family": "Indian Defenses (1.d4 Nf6)",
+    "level": "Advanced",
+    "desc": "Fischer's and Kasparov's weapon: Black lets White build a big center, then strikes with ...e5 and a ferocious kingside pawn storm. Learn the Mar del Plata, Petrosian, Gligoric, Exchange, Sämisch, Four Pawns, Averbakh and Fianchetto systems.",
+    "lines": [
+      { "name": "Classical: Mar del Plata", "moves": "1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 {The King's Indian.} 5.Nf3 O-O 6.Be2 e5 {The thematic central strike.} 7.O-O Nc6 8.d5 Ne7 9.Ne1 Nd7 {Preparing ...f5.} 10.Be3 f5 11.f3 f4 12.Bf2 g5 {The famous kingside pawn storm.}" },
+      { "name": "Petrosian 7.d5", "moves": "1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.Nf3 O-O 6.Be2 e5 7.d5 a5 {Securing c5 for a knight.} 8.Bg5 h6 9.Bh4 Na6 10.Nd2 Qe8 11.O-O Nh7 {Unpinning and preparing ...f5.}" },
+      { "name": "Gligoric 7.Be3", "moves": "1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.Nf3 O-O 6.Be2 e5 7.Be3 Ng4 {Hitting the bishop.} 8.Bg5 f6 9.Bh4 Nc6 10.d5 Ne7 {Typical KID structure with ...f5 to come.}" },
+      { "name": "Exchange 7.dxe5", "moves": "1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.Nf3 O-O 6.Be2 e5 7.dxe5 dxe5 8.Qxd8 Rxd8 9.Bg5 Re8 10.Nd5 Nxd5 11.cxd5 c6 12.Bc4 cxd5 13.Bxd5 Nd7 {Equal: no reason to fear the queen trade.}" },
+      { "name": "Sämisch 5.f3", "moves": "1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.f3 {The Sämisch.} O-O 6.Be3 e5 7.d5 Nh5 {Preparing ...f5.} 8.Qd2 f5 9.O-O-O Nd7 {Counterplay on the kingside.}" },
+      { "name": "Four Pawns Attack", "moves": "1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.f4 {The Four Pawns Attack.} O-O 6.Nf3 c5 {Hitting the over-extended center.} 7.d5 e6 8.Be2 exd5 9.cxd5 Re8 {Pressure on e4.}" },
+      { "name": "Averbakh 6.Bg5", "moves": "1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.Be2 O-O 6.Bg5 {The Averbakh.} c5 7.d5 h6 8.Be3 e6 {Opening the e-file.}" },
+      { "name": "Fianchetto Variation", "moves": "1.d4 Nf6 2.c4 g6 3.Nf3 Bg7 4.g3 O-O 5.Bg2 d6 6.O-O Nbd7 7.Nc3 e5 8.e4 c6 {Classical fianchetto main line.}" }
+    ]
+  },
+  {
+    "id": "nimzo-indian",
+    "name": "Nimzo-Indian Defense",
+    "eco": "E20–E59",
+    "side": "b",
+    "family": "Indian Defenses (1.d4 Nf6)",
+    "level": "Advanced",
+    "desc": "One of the soundest defenses in chess: Black pins the c3 knight to fight for e4 and is often happy to give the bishop pair to damage White's pawns. Learn the Rubinstein, Classical, Sämisch, 4.f3, 4.Nf3, Leningrad and Spielmann lines.",
+    "lines": [
+      { "name": "Rubinstein 4.e3", "moves": "1.d4 Nf6 2.c4 e6 3.Nc3 Bb4 {The Nimzo-Indian: pinning the knight.} 4.e3 O-O 5.Bd3 d5 6.Nf3 c5 7.O-O Nc6 8.a3 Bxc3 9.bxc3 dxc4 10.Bxc4 Qc7 {Main line: Black fights for e5.}" },
+      { "name": "Classical 4.Qc2", "moves": "1.d4 Nf6 2.c4 e6 3.Nc3 Bb4 4.Qc2 {Avoiding doubled pawns.} O-O 5.a3 Bxc3+ 6.Qxc3 b6 7.Bg5 Bb7 {Fighting for the light squares.} 8.f3 h6 9.Bh4 d5 {Main line.}" },
+      { "name": "Sämisch 4.a3", "moves": "1.d4 Nf6 2.c4 e6 3.Nc3 Bb4 4.a3 Bxc3+ 5.bxc3 c5 {Pressure on the doubled c-pawns.} 6.f3 d5 7.cxd5 Nxd5 8.dxc5 f5 {Stopping e4.}" },
+      { "name": "Kmoch 4.f3", "moves": "1.d4 Nf6 2.c4 e6 3.Nc3 Bb4 4.f3 d5 5.a3 Be7 6.e4 dxe4 7.fxe4 e5 {Striking the center.} 8.d5 Bc5 {Active bishop.}" },
+      { "name": "Romanishin 4.Nf3", "moves": "1.d4 Nf6 2.c4 e6 3.Nc3 Bb4 4.Nf3 c5 5.g3 cxd4 6.Nxd4 O-O 7.Bg2 d5 8.cxd5 Nxd5 9.Qb3 Qa5 {Counter-pin on c3.}" },
+      { "name": "Leningrad 4.Bg5", "moves": "1.d4 Nf6 2.c4 e6 3.Nc3 Bb4 4.Bg5 h6 5.Bh4 c5 6.d5 d6 7.e3 Bxc3+ 8.bxc3 e5 {Fixing the doubled pawns.}" },
+      { "name": "Spielmann 4.Qb3", "moves": "1.d4 Nf6 2.c4 e6 3.Nc3 Bb4 4.Qb3 c5 5.dxc5 Nc6 6.Nf3 Ne4 7.Bd2 Nxd2 8.Nxd2 O-O {Easy development.}" }
+    ]
+  },
+  {
+    "id": "grunfeld",
+    "name": "Grünfeld Defense",
+    "eco": "D70–D99",
+    "side": "b",
+    "family": "Indian Defenses (1.d4 Nf6)",
+    "level": "Advanced",
+    "desc": "A dynamic hypermodern defense: Black allows a big White center and then attacks it with the g7 bishop, ...c5 and piece pressure. Learn the Exchange (classical and modern), the Russian System, 4.Bf4 and 4.Bg5.",
+    "lines": [
+      { "name": "Exchange: Classical 7.Bc4", "moves": "1.d4 Nf6 2.c4 g6 3.Nc3 d5 {The Grünfeld.} 4.cxd5 Nxd5 5.e4 Nxc3 6.bxc3 Bg7 {The bishop eyes the c3-d4 chain.} 7.Bc4 c5 8.Ne2 Nc6 9.Be3 O-O 10.O-O Bg4 11.f3 Na5 {Hitting the c4 bishop.}" },
+      { "name": "Modern Exchange 7.Nf3", "moves": "1.d4 Nf6 2.c4 g6 3.Nc3 d5 4.cxd5 Nxd5 5.e4 Nxc3 6.bxc3 Bg7 7.Nf3 c5 8.Rb1 O-O 9.Be2 cxd4 10.cxd4 Qa5+ 11.Bd2 Qxa2 {Black grabs the a-pawn.}" },
+      { "name": "Russian System 5.Qb3", "moves": "1.d4 Nf6 2.c4 g6 3.Nc3 d5 4.Nf3 Bg7 5.Qb3 dxc4 6.Qxc4 O-O 7.e4 a6 {The Hungarian Variation: ...b5 is coming.}" },
+      { "name": "4.Bf4", "moves": "1.d4 Nf6 2.c4 g6 3.Nc3 d5 4.Bf4 Bg7 5.e3 c5 6.dxc5 Qa5 7.Rc1 dxc4 8.Bxc4 O-O {Fast development.}" },
+      { "name": "4.Bg5", "moves": "1.d4 Nf6 2.c4 g6 3.Nc3 d5 4.Bg5 Ne4 {Hitting the bishop.} 5.Bf4 Nxc3 6.bxc3 Bg7 7.e3 c5 {Typical Grünfeld counterplay.}" }
+    ]
+  },
+  {
+    "id": "dutch-defense",
+    "name": "Dutch Defense",
+    "eco": "A80–A99",
+    "side": "b",
+    "family": "Indian Defenses (1.d4 Nf6)",
+    "level": "Intermediate",
+    "desc": "An aggressive unbalancing reply to 1.d4: Black grabs e4 with the f-pawn. Learn the Leningrad setup and how to handle the Staunton Gambit, 2.Bg5, 2.Nc3 and 2.g3.",
+    "lines": [
+      { "name": "Leningrad main line", "moves": "1.d4 f5 {The Dutch: controlling e4.} 2.c4 Nf6 3.g3 g6 {The Leningrad: fianchetto.} 4.Bg2 Bg7 5.Nf3 O-O 6.O-O d6 7.Nc3 Qe8 {Preparing ...e5.} 8.d5 a5 {Securing c5 for a knight.}" },
+      { "name": "Staunton Gambit 2.e4", "moves": "1.d4 f5 2.e4 {The Staunton Gambit.} fxe4 3.Nc3 Nf6 4.Bg5 Nc6 5.d5 Ne5 6.Qd4 Nf7 7.Bxf6 exf6 8.Nxe4 f5 {Black returns some pawns but holds firm.}" },
+      { "name": "2.Bg5", "moves": "1.d4 f5 2.Bg5 h6 3.Bh4 g5 {Gaining space with tempo.} 4.Bg3 Nf6 5.e3 d6 6.h4 g4 {Black is fine.}" },
+      { "name": "2.Nc3 d5", "moves": "1.d4 f5 2.Nc3 d5 {Stopping e4 for good.} 3.Bf4 Nf6 4.e3 e6 {A Stonewall-style setup.}" },
+      { "name": "2.g3 move order", "moves": "1.d4 f5 2.g3 Nf6 3.Bg2 g6 4.Nf3 Bg7 5.O-O O-O 6.c4 d6 {Back to the Leningrad.}" }
+    ]
+  },
+  {
+    "id": "benko-gambit",
+    "name": "Benko Gambit",
+    "eco": "A57–A59",
+    "side": "b",
+    "family": "Gambits & Traps",
+    "level": "Intermediate",
+    "desc": "Black sacrifices a queenside pawn for long-term pressure on the a- and b-files. One of the few gambits that is fully respected at top level.",
+    "lines": [
+      { "name": "Fully accepted 5.bxa6", "moves": "1.d4 Nf6 2.c4 c5 3.d5 b5 {The Benko Gambit.} 4.cxb5 a6 {Opening files.} 5.bxa6 g6 6.Nc3 Bxa6 7.e4 Bxf1 8.Kxf1 d6 {White has lost castling rights.} 9.Nf3 Bg7 10.g3 O-O 11.Kg2 Nbd7 {Classic Benko pressure on the a- and b-files.}" },
+      { "name": "Zaitsev 5.Nc3", "moves": "1.d4 Nf6 2.c4 c5 3.d5 b5 4.cxb5 a6 5.Nc3 axb5 6.e4 b4 7.Nb5 d6 {Black has a good game.}" },
+      { "name": "5.b6", "moves": "1.d4 Nf6 2.c4 c5 3.d5 b5 4.cxb5 a6 5.b6 {Returning the pawn to keep files closed.} d6 6.Nc3 Nbd7 7.e4 g6 {Black will win back b6.}" }
+    ]
+  },
+  {
+    "id": "budapest-gambit",
+    "name": "Budapest Gambit",
+    "eco": "A51–A52",
+    "side": "b",
+    "family": "Gambits & Traps",
+    "level": "Beginner",
+    "desc": "A surprise gambit: Black gives the e-pawn and usually regains it with active pieces. Contains one of the most beautiful traps in chess: smothered mate with ...Nd3#.",
+    "lines": [
+      { "name": "Main line 4.Bf4", "moves": "1.d4 Nf6 2.c4 e5 {The Budapest Gambit.} 3.dxe5 Ng4 4.Bf4 Nc6 5.Nf3 Bb4+ 6.Nbd2 Qe7 {Ganging up on e5.} 7.e3 Ngxe5 8.Nxe5 Nxe5 9.Be2 O-O {Black has regained the pawn.}" },
+      { "name": "Trap: 7.a3? Nd3# smothered", "moves": "1.d4 Nf6 2.c4 e5 3.dxe5 Ng4 4.Bf4 Nc6 5.Nf3 Bb4+ 6.Nbd2 Qe7 7.a3? Ngxe5! 8.axb4?? Nd3# {Smothered mate: the e2 pawn is pinned by the queen!}" },
+      { "name": "6.Nc3", "moves": "1.d4 Nf6 2.c4 e5 3.dxe5 Ng4 4.Bf4 Nc6 5.Nf3 Bb4+ 6.Nc3 Qe7 7.Qd5 Bxc3+ 8.bxc3 f6 9.exf6 Nxf6 {Black has activity and targets White's pawns.}" },
+      { "name": "4.Nf3", "moves": "1.d4 Nf6 2.c4 e5 3.dxe5 Ng4 4.Nf3 Bc5 {Hitting f2.} 5.e3 Nc6 6.Be2 Ngxe5 7.Nxe5 Nxe5 {Pawn regained with active pieces.}" }
+    ]
+  }
+]
