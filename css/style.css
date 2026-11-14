@@ -89,6 +89,8 @@ main { flex: 1; width: 100%; max-width: 1240px; margin: 0 auto; padding: 24px 16
 .badge-inaccuracy .badge-glyph { background: var(--c-inaccuracy); color: #3a2b00; } .badge-inaccuracy .badge-label { color: var(--c-inaccuracy); }
 .badge-mistake .badge-glyph { background: var(--c-mistake); }       .badge-mistake .badge-label { color: var(--c-mistake); }
 .badge-blunder .badge-glyph { background: var(--c-blunder); }       .badge-blunder .badge-label { color: var(--c-blunder); }
+.badge-excellent .badge-glyph { background: #96bc4b; font-size: 10px; } .badge-excellent .badge-label { color: #96bc4b; }
+.badge-good .badge-glyph { background: #77915f; }                   .badge-good .badge-label { color: #9fb98a; }
 .badge-wrong .badge-glyph { background: var(--c-wrong); }           .badge-wrong .badge-label { color: var(--c-wrong); }
 .badge-info .badge-glyph { background: #5a5650; font-style: italic; font-family: Georgia, serif; }
 .badge-hint .badge-glyph { background: #3d6e1f; }
@@ -233,6 +235,34 @@ p .badge, li .badge { margin: 0 1px; }
 .lines-box .status { min-width: 24px; text-align: center; }
 
 .blocked { text-align: center; padding: 60px 16px; }
+
+/* ---------- trainer tabs & free play ---------- */
+.tabs { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; background: var(--bg2); padding: 4px; border-radius: 12px; }
+.tabs button { background: none; border: 0; color: var(--muted); font: inherit; padding: 8px 6px; border-radius: 9px; cursor: pointer; display: flex; flex-direction: column; align-items: center; gap: 1px; }
+.tabs button b { font-size: 14px; }
+.tabs button span { font-size: 11px; }
+.tabs button.on { background: var(--panel2); color: var(--text); box-shadow: inset 0 0 0 1px var(--line); }
+.tabs button.on span { color: var(--muted); }
+.panel-body { display: flex; flex-direction: column; gap: 14px; }
+.lbl { min-width: 84px; }
+.ideas { background: rgba(129, 182, 76, .08); border: 1px solid rgba(129, 182, 76, .25); border-radius: 10px; padding: 10px 12px; }
+.ideas summary { cursor: pointer; font-weight: 700; font-size: 14px; }
+.ideas ul { margin: 8px 0 0; padding-left: 18px; font-size: 13.5px; color: #d6d2cc; }
+.ideas li { margin: 3px 0; }
+.fp-status { font-size: 13.5px; background: var(--bg2); border-radius: 10px; padding: 10px 12px; min-height: 20px; }
+.evalrow { display: flex; align-items: center; gap: 10px; }
+.evalbar { flex: 1; height: 10px; background: #403d39; border-radius: 99px; overflow: hidden; }
+.evalbar > div { height: 100%; width: 50%; background: #f0eee9; transition: width .5s; }
+.concepts { display: flex; flex-direction: column; gap: 4px; margin-top: 6px; }
+.concept { font-size: 12.5px; color: #c9c4bd; }
+.concept b { color: var(--text); margin-right: 4px; }
+.reasons { margin: 6px 0 0; padding-left: 18px; font-size: 13px; color: #e6c9a8; }
+.reasons li { margin: 2px 0; }
+.tag-book { font-size: 10.5px; font-weight: 800; text-transform: uppercase; letter-spacing: .05em; color: var(--c-book); background: rgba(168, 136, 101, .15); padding: 1px 6px; border-radius: 5px; margin-left: 4px; }
+.fp-score { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; }
+.fp-score div { background: var(--bg2); border-radius: 10px; padding: 8px 4px; text-align: center; }
+.fp-score b { display: block; font-size: 17px; color: var(--accent); }
+.fp-score span { font-size: 11px; color: var(--muted); }
 
 /* ---------- modal ---------- */
 .modal-backdrop { position: fixed; inset: 0; background: rgba(0, 0, 0, .6); display: flex; align-items: center; justify-content: center; z-index: 100; padding: 16px; animation: fade .2s; }

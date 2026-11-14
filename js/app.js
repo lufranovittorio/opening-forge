@@ -3,6 +3,7 @@ import { Chessground } from '../vendor/chessground.min.js';
 import { buildOpening, classify, BADGES, moveLabel } from './tree.js';
 import * as store from './store.js';
 import { sound } from './sound.js';
+import { FreePlay } from './freeplay.js';
 
 const app = document.getElementById('app');
 const modalRoot = document.getElementById('modal-root');
@@ -24,9 +25,18 @@ const sidePill = s => `<span class="pill pill-${s}">${s === 'w' ? '♔' : '♚'}
 
 // ---------------------------------------------------------------- data
 async function loadData() {
-  const files = await (await fetch('data/index.json')).json();
-  const groups = await Promise.all(files.map(f => fetch(`data/${f}`).then(r => r.json())));
-  OPENINGS = groups.flat().map(buildOpening);
+  const files = await (await fetch('data/index.json', { cache: 'no-cache' })).json();
+  const groups = await Promise.all(files.map(f => fetch(`data/${f}`, { cache: 'no-cache' }).then(r => r.json())));
+  // Entries that reuse an existing id add extra lines/ideas to that opening.
+  const merged = [];
+  const seen = {};
+  for (const o of groups.flat()) {
+    if (seen[o.id]) {
+      seen[o.id].lines.push(...(o.lines || []));
+      if (o.ideas) seen[o.id].ideas = [...(seen[o.id].ideas || []), ...o.ideas];
+    } else { seen[o.id] = { ...o, lines: [...o.lines] }; merged.push(seen[o.id]); }
+  }
+  OPENINGS = merged.map(buildOpening);
   BY_ID = Object.fromEntries(OPENINGS.map(o => [o.id, o]));
 }
 
@@ -219,12 +229,7 @@ function renderTrainer(op) {
     <section class="trainer">
       <div class="board-col">
         <div class="board-wrap"><div id="board" class="board"></div><div class="badge-layer" id="badge-layer"></div></div>
-        <div class="board-controls">
-          <button class="btn btn-ghost" id="btn-hint" title="Show the book move (H)">💡 Hint</button>
-          <button class="btn btn-ghost" id="btn-restart" title="Restart this line (R)">↺ Restart</button>
-          <button class="btn btn-ghost" id="btn-flip" title="Flip board (F)">⇅ Flip</button>
-          <button class="btn btn-primary" id="btn-next" title="Next line (N)">Next line →</button>
-        </div>
+        <div class="board-controls" id="board-controls"></div>
       </div>
       <aside class="panel">
         ${isForced ? `<div class="forced-tag">🎲 Random challenge — locked in <button class="link" id="giveup">give up</button></div>` : ''}
@@ -233,35 +238,27 @@ function renderTrainer(op) {
           <h1>${esc(op.name)}</h1>
           <div class="meta">${sidePill(op.side)} <span class="eco">${esc(op.eco)}</span> <span class="level level-${op.level.toLowerCase()}">${op.level}</span></div>
         </div>
-        <div class="progress-row">
-          <div class="bar big"><div id="op-bar"></div></div>
-          <span id="op-progress" class="muted"></span>
+        <div class="tabs" id="train-tabs">
+          <button data-tm="book"><b>📖 Book lines</b><span>memorize every variation</span></button>
+          <button data-tm="free"><b>🧠 Understand it</b><span>opponent plays anything</span></button>
         </div>
-        <div class="mode-row">
-          <span class="muted">Show next move</span>
-          <div class="seg seg-sm" id="mode-seg">
-            <button data-mode="auto" title="Arrow on new lines (study), no arrow on lines you've seen (drill)">Auto</button>
-            <button data-mode="study" title="Always show an arrow with the next book move">Always</button>
-            <button data-mode="drill" title="Never show the next move: pure memory drill">Off</button>
-          </div>
-          <button class="icon-btn" id="btn-sound" title="Toggle sound"></button>
-        </div>
-        <label class="toggle-row" title="Show the explanation of your next move before you play it">
-          <input type="checkbox" id="opt-preview"> <span>Explain the next move before I play it</span>
-        </label>
-        <p class="muted small mode-note" id="mode-note"></p>
-        <div class="line-title" id="line-title"></div>
-        <div class="feed" id="feed"></div>
-        <div class="moves" id="moves"></div>
-        <details class="lines-box" id="lines-box">
-          <summary>All variations (<span id="lines-count"></span>)</summary>
-          <ul id="lines-list"></ul>
-        </details>
+        ${op.ideas && op.ideas.length ? `<details class="ideas" ${store.get().settings.trainMode === 'free' ? 'open' : ''}><summary>💡 Key ideas of this opening</summary><ul>${op.ideas.map(i => `<li>${esc(i)}</li>`).join('')}</ul></details>` : ''}
+        <div id="panel-body" class="panel-body"></div>
       </aside>
     </section>`;
   if (isForced) document.getElementById('giveup').onclick = () => giveUp();
-  currentTrainer = new Trainer(op, isForced);
-  window.__trainer = currentTrainer; // handy for debugging in the console
+  const mount = () => {
+    if (currentTrainer) currentTrainer.destroy();
+    const tm = store.get().settings.trainMode === 'free' ? 'free' : 'book';
+    app.querySelectorAll('[data-tm]').forEach(b => b.classList.toggle('on', b.dataset.tm === tm));
+    currentTrainer = tm === 'free' ? new FreePlay(op, { forced: isForced }) : new Trainer(op, isForced);
+    window.__trainer = currentTrainer; // handy for debugging in the console
+  };
+  app.querySelectorAll('[data-tm]').forEach(b => b.onclick = () => {
+    if (store.get().settings.trainMode === b.dataset.tm || (b.dataset.tm === 'book' && !store.get().settings.trainMode)) return;
+    store.get().settings.trainMode = b.dataset.tm; store.save(); mount();
+  });
+  mount();
 }
 
 function giveUp() {
@@ -283,6 +280,36 @@ class Trainer {
     this.orientation = op.side === 'w' ? 'white' : 'black';
     this.timers = [];
     this.$ = id => document.getElementById(id);
+    this.$('board-controls').innerHTML = `
+      <button class="btn btn-ghost" id="btn-hint" title="Show the book move (H)">💡 Hint</button>
+      <button class="btn btn-ghost" id="btn-restart" title="Restart this line (R)">↺ Restart</button>
+      <button class="btn btn-ghost" id="btn-flip" title="Flip board (F)">⇅ Flip</button>
+      <button class="btn btn-primary" id="btn-next" title="Next line (N)">Next line →</button>`;
+    this.$('panel-body').innerHTML = `
+      <div class="progress-row">
+        <div class="bar big"><div id="op-bar"></div></div>
+        <span id="op-progress" class="muted"></span>
+      </div>
+      <div class="mode-row">
+        <span class="muted lbl">Show next move</span>
+        <div class="seg seg-sm" id="mode-seg">
+          <button data-mode="auto" title="Arrow on new lines (study), no arrow on lines you've seen (drill)">Auto</button>
+          <button data-mode="study" title="Always show an arrow with the next book move">Always</button>
+          <button data-mode="drill" title="Never show the next move: pure memory drill">Off</button>
+        </div>
+        <button class="icon-btn" id="btn-sound" title="Toggle sound"></button>
+      </div>
+      <label class="toggle-row" title="Show the explanation of your next move before you play it">
+        <input type="checkbox" id="opt-preview"> <span>Explain the next move before I play it</span>
+      </label>
+      <p class="muted small mode-note" id="mode-note"></p>
+      <div class="line-title" id="line-title"></div>
+      <div class="feed" id="feed"></div>
+      <div class="moves" id="moves"></div>
+      <details class="lines-box" id="lines-box">
+        <summary>All variations (<span id="lines-count"></span>)</summary>
+        <ul id="lines-list"></ul>
+      </details>`;
     this.cg = Chessground(this.$('board'), {
       orientation: this.orientation,
       coordinates: true,

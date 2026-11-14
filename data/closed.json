@@ -32,7 +32,8 @@
     "desc": "A reliable system: Bf4, e3, Nf3, c3, Nbd2 and Bd3 against almost anything. Easy to learn, but you must know the sharp ...c5 and ...Qb6 tries and the b2 poisoned pawn tricks.",
     "lines": [
       { "name": "Main setup vs ...d5", "moves": "1.d4 d5 2.Bf4 {The London: bishop out before e3.} Nf6 3.e3 e6 4.Nf3 c5 5.c3 {The classic London pyramid.} Nc6 6.Nbd2 Bd6 7.Bg3 {Keeping the bishop and inviting ...Bxg3 hxg3 with an open h-file.} O-O 8.Bd3 {Perfect setup.}" },
-      { "name": "Early ...c5 and ...Qb6", "moves": "1.d4 d5 2.Bf4 c5 3.e3 Nc6 4.c3 Qb6 {Hitting b2.} 5.Qb3 {Defending b2 by offering a queen trade.} c4 6.Qc2 Bf5 7.Qc1 {Unusual but standard: the queen protects b2 and will reroute.}" },
+      { "name": "Early ...c5 and ...Qb6", "moves": "1.d4 d5 2.Bf4 c5 3.e3 Nc6 4.c3 Qb6 {Hitting b2.} 5.Qb3 {Defending b2 by offering a queen trade.} c4 6.Qc2 e5 {The sharp counter.} 7.dxe5 Bf5 8.Qc1 {Unusual but standard: the queen protects b2 and will reroute.}" },
+      { "name": "...Qb6 6...Bf5? 7.Qxf5!", "moves": "1.d4 d5 2.Bf4 c5 3.e3 Nc6 4.c3 Qb6 5.Qb3 c4 6.Qc2 Bf5? {Natural, but the bishop simply hangs.} 7.Qxf5! Qxb2 8.Qxd5 {Not afraid of ...Qxa1.} Qxa1 9.Qb5 {Hitting b7 and c4: Black's queen is stuck in the corner.}" },
       { "name": "Symmetrical 2...Bf5", "moves": "1.d4 d5 2.Bf4 Bf5 3.e3 e6 4.c4 {Exploiting the absence of Black's bishop from the queenside.} Bb4+ 5.Nc3 Nf6 6.Qb3 {Hitting b7 and the b4 bishop.}" },
       { "name": "Early blunder 2...e5?", "moves": "1.d4 d5 2.Bf4 e5? {A premature break.} 3.dxe5 Nc6 4.Nf3 {A clean extra pawn.}" },
       { "name": "vs King's Indian setup", "moves": "1.d4 Nf6 2.Bf4 g6 3.e3 Bg7 4.Nf3 O-O 5.Be2 d6 6.h3 {A luft for the bishop.} Nbd7 7.O-O {Solid and simple.}" },

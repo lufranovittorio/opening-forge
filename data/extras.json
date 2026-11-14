@@ -1,0 +1,942 @@
+[
+  {
+    "id": "italian-game",
+    "ideas": [
+      "The bishop on c4 targets f7, Black's weakest square early on.",
+      "Prepare d4 with c3: a broad pawn center is White's long-term goal.",
+      "In the slow Pianissimo (d3), maneuver Nbd2-f1-g3 and play h3 to stop ...Bg4.",
+      "Castle early, put a rook on e1 and keep the e4 pawn solid.",
+      "Punish early queen sorties and knight jumps like ...Nd4 by simply developing and trading."
+    ],
+    "lines": [
+      {
+        "name": "Giuoco Piano 4...Qe7",
+        "moves": "1.e4 e5 2.Nf3 Nc6 3.Bc4 Bc5 4.c3 Qe7 {The old Giuoco Piano: guarding e5.} 5.d4 Bb6 6.O-O Nf6 7.Re1 d6 8.h3 {Ideal setup: strong center, no ...Bg4.}"
+      },
+      {
+        "name": "Pianissimo 5...d5?!",
+        "moves": "1.e4 e5 2.Nf3 Nc6 3.Bc4 Bc5 4.c3 Nf6 5.d3 d5?! {A premature central break.} 6.exd5 Nxd5 7.O-O O-O 8.Re1 {The e5 pawn is under fire.}"
+      },
+      {
+        "name": "Two Knights 4...d5?!",
+        "moves": "1.e4 e5 2.Nf3 Nc6 3.Bc4 Nf6 4.d3 d5?! {Opening the center too early.} 5.exd5 Nxd5 6.O-O Be7 7.Re1 {Hitting e5 and planning d4.}"
+      },
+      {
+        "name": "3...Nge7?! and the f7 attack",
+        "moves": "1.e4 e5 2.Nf3 Nc6 3.Bc4 Nge7?! {Blocks the bishop and leaves f7 weak.} 4.Ng5 {Hitting f7 again.} d5 5.exd5 Nxd5? 6.Nxf7! Kxf7 7.Qf3+ Ke6 8.Nc3 {A Fried Liver-style attack.}"
+      },
+      {
+        "name": "3...h6?! slow move",
+        "moves": "1.e4 e5 2.Nf3 Nc6 3.Bc4 h6?! {Too slow.} 4.d4 {Use the time to grab the center.} exd4 5.Nxd4 {White has a big lead in development.}"
+      }
+    ]
+  },
+  {
+    "id": "ruy-lopez",
+    "ideas": [
+      "Pressure the c6 knight — it defends e5.",
+      "Retreat Ba4-b3 when attacked and keep the bishop aiming at f7.",
+      "Play c3 and d4 to build an ideal center; h3 stops ...Bg4.",
+      "The knight often travels b1-d2-f1-g3 to support a kingside attack.",
+      "Against gambits like the Marshall or Schliemann, accept material and defend calmly."
+    ],
+    "lines": [
+      {
+        "name": "Closed: Zaitsev 9...Bb7",
+        "moves": "1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 d6 8.c3 O-O 9.h3 Bb7 {The Zaitsev: pressure on e4.} 10.d4 Re8 11.Nbd2 Bf8 12.a4 {Main line: queenside pressure.}"
+      },
+      {
+        "name": "Closed: Breyer 9...Nb8",
+        "moves": "1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Be7 6.Re1 b5 7.Bb3 d6 8.c3 O-O 9.h3 Nb8 {The Breyer: the knight reroutes to d7.} 10.d4 Nbd7 11.Nbd2 Bb7 12.Bc2 Re8 13.Nf1 Bf8 14.Ng3 {The classic maneuver is complete.}"
+      },
+      {
+        "name": "Arkhangelsk 5...b5 6...Bb7",
+        "moves": "1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O b5 6.Bb3 Bb7 {The Arkhangelsk: active bishops.} 7.Re1 Bc5 8.c3 d6 9.d4 Bb6 10.Bg5 {Pinning and pressuring e5.}"
+      },
+      {
+        "name": "Møller 5...Bc5",
+        "moves": "1.e4 e5 2.Nf3 Nc6 3.Bb5 a6 4.Ba4 Nf6 5.O-O Bc5 {The active Møller.} 6.c3 b5 7.Bb3 d6 8.d4 Bb6 9.a4 {Pressure on the queenside and e5.}"
+      },
+      {
+        "name": "Smyslov 3...g6",
+        "moves": "1.e4 e5 2.Nf3 Nc6 3.Bb5 g6 {Fianchetto defense.} 4.c3 {Preparing d4 against the g7 bishop.} a6 5.Ba4 d6 6.d4 Bd7 7.O-O Bg7 8.Re1 {A solid center.}"
+      },
+      {
+        "name": "Berlin 4...d6",
+        "moves": "1.e4 e5 2.Nf3 Nc6 3.Bb5 Nf6 4.O-O d6 {A solid, Steinitz-like Berlin.} 5.d4 Bd7 6.Nc3 Be7 7.Re1 exd4 8.Nxd4 {Typical space advantage.}"
+      }
+    ]
+  },
+  {
+    "id": "scotch-game",
+    "ideas": [
+      "Open the center immediately with 3.d4 and develop quickly.",
+      "The knight on d4 is centralized; trade it on c6 when Black's pieces target it.",
+      "In the Mieses, push e5 to kick the f6 knight and grab space.",
+      "Watch f2: ...Bc5 and ...Qf6 or ...Qh4 aim at it."
+    ],
+    "lines": [
+      {
+        "name": "Classical 6...bxc6",
+        "moves": "1.e4 e5 2.Nf3 Nc6 3.d4 exd4 4.Nxd4 Bc5 5.Nxc6 Qf6 6.Qd2 bxc6 {Recapturing toward the center.} 7.Bd3 Ne7 8.O-O O-O 9.Nc3 {Quick development and a solid center.}"
+      },
+      {
+        "name": "Mieses 8...Nb6",
+        "moves": "1.e4 e5 2.Nf3 Nc6 3.d4 exd4 4.Nxd4 Nf6 5.Nxc6 bxc6 6.e5 Qe7 7.Qe2 Nd5 8.c4 Nb6 9.Nd2 Qe6 10.b3 a5 11.Bb2 {Main line: e5 is a thorn in Black's side.}"
+      },
+      {
+        "name": "4...Qf6",
+        "moves": "1.e4 e5 2.Nf3 Nc6 3.d4 exd4 4.Nxd4 Qf6 {Hitting d4.} 5.Be3 Bc5 6.c3 Nge7 7.Bc4 O-O 8.O-O {Calm development; the queen on f6 will become a target.}"
+      },
+      {
+        "name": "3...d6",
+        "moves": "1.e4 e5 2.Nf3 Nc6 3.d4 d6 {Holding e5.} 4.Bb5 Bd7 5.Nc3 Nf6 6.O-O Be7 7.Re1 exd4 8.Nxd4 {A Steinitz Ruy Lopez with free play for White.}"
+      },
+      {
+        "name": "4...g6",
+        "moves": "1.e4 e5 2.Nf3 Nc6 3.d4 exd4 4.Nxd4 g6 5.Nc3 Bg7 6.Be3 Nf6 7.Nxc6 bxc6 8.e5 {Kicking the knight.} Ng8 9.Bd4 {A strong bind on the dark squares.}"
+      }
+    ]
+  },
+  {
+    "id": "fried-liver",
+    "ideas": [
+      "Ng5 plus Bc4 doubles the attack on f7.",
+      "After ...d5 exd5, never let Black regain the pawn cheaply.",
+      "If Black plays the natural ...Nxd5, the Fried Liver sacrifice Nxf7 exposes the king.",
+      "In the main line, keep the extra pawn and finish development before Black's activity grows."
+    ],
+    "lines": [
+      {
+        "name": "Main line 10...Qd4",
+        "moves": "1.e4 e5 2.Nf3 Nc6 3.Bc4 Nf6 4.Ng5 d5 5.exd5 Na5 6.Bb5+ c6 7.dxc6 bxc6 8.Be2 h6 9.Nf3 e4 10.Ne5 Qd4 {Attacking the knight and f2.} 11.f4 Bc5 12.Rf1 {Everything is protected.}"
+      },
+      {
+        "name": "Fried Liver: 7...Kg8?? mate",
+        "moves": "1.e4 e5 2.Nf3 Nc6 3.Bc4 Nf6 4.Ng5 d5 5.exd5 Nxd5? 6.Nxf7! Kxf7 7.Qf3+ Kg8?? {Walking into a pin.} 8.Bxd5+ Qxd5 9.Qxd5+ Be6 10.Qxe6# {Checkmate.}"
+      },
+      {
+        "name": "4...h6? 5.Nxf7",
+        "moves": "1.e4 e5 2.Nf3 Nc6 3.Bc4 Nf6 4.Ng5 h6? {Ignoring the threat.} 5.Nxf7 Qe7 6.Nxh8 {Winning the exchange and a pawn.}"
+      }
+    ]
+  },
+  {
+    "id": "kings-gambit",
+    "ideas": [
+      "Give the f-pawn to open the f-file and build a big center with d4.",
+      "After ...exf4, Nf3 stops ...Qh4+; then regain f4 with Bxf4 or undermine it with h4/g3.",
+      "Castle quickly: the open f-file plus a rook on f1 targets f7.",
+      "Against counter-strikes with ...d5, keep development flowing — tempo matters more than pawns."
+    ],
+    "lines": [
+      {
+        "name": "Kieseritzky 5...d6",
+        "moves": "1.e4 e5 2.f4 exf4 3.Nf3 g5 4.h4 g4 5.Ne5 d6 6.Nxg4 Nf6 7.Nxf6+ Qxf6 8.Nc3 {Rapid development and a strong center.}"
+      },
+      {
+        "name": "Becker 3...h6",
+        "moves": "1.e4 e5 2.f4 exf4 3.Nf3 h6 {The Becker Defense.} 4.d4 g5 5.h4 Bg7 6.hxg5 hxg5 7.Rxh8 Bxh8 8.g3 {Undermining the f4 pawn.}"
+      },
+      {
+        "name": "Falkbeer 3...c6",
+        "moves": "1.e4 e5 2.f4 d5 3.exd5 c6 4.Nc3 exf4 5.Nf3 {Back to a King's Gambit with extra development.}"
+      },
+      {
+        "name": "3...Nc6",
+        "moves": "1.e4 e5 2.f4 exf4 3.Nf3 Nc6 4.d4 d5 5.exd5 Qxd5 6.Nc3 Qa5 7.Bxf4 {White regains the pawn with a nice position.}"
+      }
+    ]
+  },
+  {
+    "id": "vienna-game",
+    "ideas": [
+      "Develop Nc3 first, keeping f4 in reserve.",
+      "The Vienna Gambit (f4) opens the f-file and aims for e5 with a space edge.",
+      "Against ...Nc6/...Bc5 setups, Bc4 and Qg4 hit g7 and f7.",
+      "Castle and bring a rook to f1 once the f-file opens."
+    ],
+    "lines": [
+      {
+        "name": "Vienna Gambit 5...Bg4",
+        "moves": "1.e4 e5 2.Nc3 Nf6 3.f4 d5 4.fxe5 Nxe4 5.Nf3 Bg4 6.Qe2 Nxc3 7.dxc3 c6 8.Bf4 {A lead in development and the e5 wedge.}"
+      },
+      {
+        "name": "Vienna Gambit 3...d6",
+        "moves": "1.e4 e5 2.Nc3 Nf6 3.f4 d6 {Solid but passive.} 4.Nf3 Nc6 5.Bb5 Bd7 6.d3 {A comfortable King's Gambit Declined.}"
+      },
+      {
+        "name": "2...Nc6 3...Nf6",
+        "moves": "1.e4 e5 2.Nc3 Nc6 3.Bc4 Nf6 4.d3 Bc5 5.f4 d6 6.Nf3 {A Vienna/King's Gambit hybrid with pressure on f7.}"
+      },
+      {
+        "name": "2...Nc6 4...g6?",
+        "moves": "1.e4 e5 2.Nc3 Nc6 3.Bc4 Bc5 4.Qg4 g6? {Weakens the dark squares.} 5.Qf3 {Double attack on f7.}"
+      }
+    ]
+  },
+  {
+    "id": "danish-gambit",
+    "ideas": [
+      "Sacrifice pawns for a huge development lead and two bishops raking the kingside.",
+      "Aim the bishops at f7 and g7; open lines matter more than material.",
+      "If Black returns material with ...d5, simplify into a comfortable position."
+    ],
+    "lines": [
+      {
+        "name": "4...Nf6 5.Nxc3",
+        "moves": "1.e4 e5 2.d4 exd4 3.c3 dxc3 4.Bc4 Nf6 5.Nxc3 Nc6 6.Nf3 Bb4 7.O-O {A Göring-style setup with great activity.}"
+      },
+      {
+        "name": "5...Bb4+",
+        "moves": "1.e4 e5 2.d4 exd4 3.c3 dxc3 4.Bc4 cxb2 5.Bxb2 Bb4+ 6.Nc3 Nf6 7.Ne2 O-O 8.O-O {Two pawns down, but every piece is active.}"
+      },
+      {
+        "name": "3...Qe7",
+        "moves": "1.e4 e5 2.d4 exd4 3.c3 Qe7 4.cxd4 Qxe4+ 5.Be3 {Development with tempo coming: Nc3 and Nf3.}"
+      }
+    ]
+  },
+  {
+    "id": "evans-gambit",
+    "ideas": [
+      "Give the b-pawn to gain time: c3 and d4 follow with tempo on the bishop.",
+      "Qb3 and Bc4 together hammer f7.",
+      "Ba3 can stop Black from castling.",
+      "Rapid development and open central files are your compensation."
+    ],
+    "lines": [
+      {
+        "name": "Accepted 5...Bc5",
+        "moves": "1.e4 e5 2.Nf3 Nc6 3.Bc4 Bc5 4.b4 Bxb4 5.c3 Bc5 6.d4 exd4 7.O-O d6 8.cxd4 Bb6 9.Nc3 {The Normal Position: a big center for the pawn.}"
+      },
+      {
+        "name": "Accepted 5...Bd6",
+        "moves": "1.e4 e5 2.Nf3 Nc6 3.Bc4 Bc5 4.b4 Bxb4 5.c3 Bd6 {The Stone-Ware Defense.} 6.d4 Nf6 7.O-O O-O 8.Re1 {A big center.}"
+      },
+      {
+        "name": "Compromised Defense 7...dxc3",
+        "moves": "1.e4 e5 2.Nf3 Nc6 3.Bc4 Bc5 4.b4 Bxb4 5.c3 Ba5 6.d4 exd4 7.O-O dxc3?! {Greedy.} 8.Qb3 Qf6 9.e5 Qg6 10.Nxc3 {A huge lead in development.}"
+      }
+    ]
+  },
+  {
+    "id": "offbeat-e5-white",
+    "ideas": [
+      "Punish weakening pawn moves (...f6, ...f5) with direct attacks on the king.",
+      "Answer early central counters with quick development and tempo on the queen.",
+      "Against the Philidor, keep the center and build space — don't rush.",
+      "In the Petrov, avoid copycat tricks: Qe2 pins after 3...Nxe4?"
+    ],
+    "lines": [
+      {
+        "name": "Latvian 3...Nc6",
+        "moves": "1.e4 e5 2.Nf3 f5?! 3.Nxe5 Nc6 4.Qh5+ g6 5.Nxg6 Nf6 6.Qh3 hxg6 7.Qxh8 {White wins the exchange.}"
+      },
+      {
+        "name": "Elephant 3...e4",
+        "moves": "1.e4 e5 2.Nf3 d5?! 3.exd5 e4 4.Qe2 Nf6 5.d3 Be7 6.dxe4 O-O 7.Nc3 {Two pawns up.}"
+      },
+      {
+        "name": "Philidor Hanham 3...Nd7",
+        "moves": "1.e4 e5 2.Nf3 d6 3.d4 Nd7 4.Bc4 c6 5.O-O Be7 6.dxe5 dxe5 7.Ng5 {Hitting f7: Black must be precise.}"
+      },
+      {
+        "name": "Petrov 6...Bd6",
+        "moves": "1.e4 e5 2.Nf3 Nf6 3.Nxe5 d6 4.Nf3 Nxe4 5.d4 d5 6.Bd3 Bd6 7.O-O O-O 8.c4 c6 9.Re1 {Hitting the e4 knight.}"
+      },
+      {
+        "name": "Stafford 4...bxc6",
+        "moves": "1.e4 e5 2.Nf3 Nf6 3.Nxe5 Nc6 4.Nxc6 bxc6 5.d3 d5 6.Nd2 Bd6 7.Be2 O-O 8.O-O {White is simply a pawn up.}"
+      }
+    ]
+  },
+  {
+    "id": "two-knights-black",
+    "ideas": [
+      "Counter-attack e4 instead of defending passively.",
+      "Against Ng5, block with ...d5 and after exd5 play ...Na5 — never ...Nxd5?.",
+      "Use the fork trick ...Nxe4 + ...d5 when White's knight on c3 is loose.",
+      "Your compensation for a pawn is rapid development and a space-gaining ...e4."
+    ],
+    "lines": [
+      {
+        "name": "4.Ng5 8.Qf3 Rb8",
+        "moves": "1.e4 e5 2.Nf3 Nc6 3.Bc4 Nf6 4.Ng5 d5 5.exd5 Na5 6.Bb5+ c6 7.dxc6 bxc6 8.Qf3 Rb8 {Activating the rook; Black has strong compensation.}"
+      },
+      {
+        "name": "4.Ng5 9.Nh3 (Steinitz)",
+        "moves": "1.e4 e5 2.Nf3 Nc6 3.Bc4 Nf6 4.Ng5 d5 5.exd5 Na5 6.Bb5+ c6 7.dxc6 bxc6 8.Be2 h6 9.Nh3 Bc5 10.d3 O-O {Big lead in development.}"
+      },
+      {
+        "name": "4.d4 exd4 5.Ng5?!",
+        "moves": "1.e4 e5 2.Nf3 Nc6 3.Bc4 Nf6 4.d4 exd4 5.Ng5?! d5 6.exd5 Qe7+ {Disrupting White's castling.} 7.Kf1 Ne5 {Black is better.}"
+      }
+    ]
+  },
+  {
+    "id": "petrov-black",
+    "ideas": [
+      "Counter-attack e4 instead of defending e5.",
+      "After 3.Nxe5, always kick the knight with ...d6 before taking on e4.",
+      "Aim for symmetrical, solid structures and develop harmoniously.",
+      "Against sacrifices like Nxf7, accept the piece and walk the king to safety."
+    ],
+    "lines": [
+      {
+        "name": "5.Qe2 queen trade",
+        "moves": "1.e4 e5 2.Nf3 Nf6 3.Nxe5 d6 4.Nf3 Nxe4 5.Qe2 Qe7 6.d3 Nf6 7.Bg5 Qxe2+ 8.Bxe2 Be7 {A level endgame.}"
+      },
+      {
+        "name": "5.d3 quiet",
+        "moves": "1.e4 e5 2.Nf3 Nf6 3.Nxe5 d6 4.Nf3 Nxe4 5.d3 Nf6 6.d4 d5 {Symmetrical and comfortable.}"
+      },
+      {
+        "name": "4.Nc4",
+        "moves": "1.e4 e5 2.Nf3 Nf6 3.Nxe5 d6 4.Nc4 Nxe4 5.Qe2 Qe7 6.Ne3 Nf6 {Equal.}"
+      }
+    ]
+  },
+  {
+    "id": "stafford-gambit",
+    "ideas": [
+      "Give the e-pawn for rapid development and open lines toward f2.",
+      "The bishop on c5 and a knight on g4 or e4 create threats against f2.",
+      "...h5 prepares ...Ng4 and opens the h-file if White plays h3.",
+      "Objectively dubious: it works best against natural-looking but careless moves."
+    ],
+    "lines": [
+      {
+        "name": "Trap: 5.Nc3 ...Qd6 idea",
+        "moves": "1.e4 e5 2.Nf3 Nf6 3.Nxe5 Nc6 4.Nxc6 dxc6 5.Nc3 Bc5 6.Be2 h5 7.O-O Ng4 8.h3 Qd6 9.hxg4 hxg4 {Same mating idea: ...Qh2# is threatened.}"
+      },
+      {
+        "name": "Trap: 5.e5 Ne4 6.d3? Bc5!",
+        "moves": "1.e4 e5 2.Nf3 Nf6 3.Nxe5 Nc6 4.Nxc6 dxc6 5.e5 Ne4 6.d3? Bc5! {Threatening ...Bxf2+ and ...Nxf2.} 7.dxe4?? Bxf2+! 8.Kxf2 Qxd1 {The queen falls on d1.}"
+      },
+      {
+        "name": "5.d3 Bc5 6.Nc3 Ng4",
+        "moves": "1.e4 e5 2.Nf3 Nf6 3.Nxe5 Nc6 4.Nxc6 dxc6 5.d3 Bc5 6.Nc3 Ng4 7.Be3 Nxe3 8.fxe3 Bxe3 {Pawn regained with the bishop pair.}"
+      }
+    ]
+  },
+  {
+    "id": "sicilian-najdorf",
+    "ideas": [
+      "...a6 controls b5 and prepares ...e5 or ...b5 queenside expansion.",
+      "The half-open c-file is Black's highway: rooks and queen go to c8/c7.",
+      "In opposite-side castling races, use ...b5-b4 and exchange sacrifices on c3.",
+      "...e5 gains space and kicks the d4 knight; then d5 becomes the key square to control."
+    ],
+    "lines": [
+      {
+        "name": "English Attack 7.Nf3",
+        "moves": "1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 a6 6.Be3 e5 7.Nf3 Be7 8.Bc4 O-O 9.O-O Be6 {Trading off White's best bishop.}"
+      },
+      {
+        "name": "English Attack 8.Qd2",
+        "moves": "1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 a6 6.Be3 e5 7.Nb3 Be6 8.Qd2 Nbd7 9.f3 Be7 10.O-O-O O-O {Same race, different move order.}"
+      },
+      {
+        "name": "6.a4",
+        "moves": "1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 a6 6.a4 e5 7.Nf3 Be7 8.Bc4 O-O 9.O-O Be6 {Standard Najdorf structure.}"
+      },
+      {
+        "name": "6.g3",
+        "moves": "1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 a6 6.g3 e5 7.Nde2 Be7 8.Bg2 O-O 9.O-O b5 {Queenside expansion.}"
+      },
+      {
+        "name": "3.c3 (beware the Qa4+ trick)",
+        "moves": "1.e4 c5 2.Nf3 d6 3.c3 Nf6 4.Be2 Nbd7 {Not 4...Nxe4?? 5.Qa4+! winning the knight.} 5.d3 g6 6.O-O Bg7 {Solid.}"
+      },
+      {
+        "name": "3.Bc4",
+        "moves": "1.e4 c5 2.Nf3 d6 3.Bc4 Nf6 4.d3 Nc6 5.O-O e6 {Blunting the bishop.} 6.c3 Be7 {Comfortable for Black.}"
+      }
+    ]
+  },
+  {
+    "id": "sicilian-dragon",
+    "ideas": [
+      "The g7 bishop is the Dragon's soul — keep it and open the long diagonal.",
+      "Counter-attack on the c-file: ...Rc8, ...Ne5-c4 and exchange sacrifices on c3.",
+      "Against the Yugoslav Attack, strike back in the center with ...d5 when possible.",
+      "Speed is everything in opposite-side castling races."
+    ],
+    "lines": [
+      {
+        "name": "Yugoslav 9.g4",
+        "moves": "1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 g6 6.Be3 Bg7 7.f3 O-O 8.Qd2 Nc6 9.g4 Be6 10.Nxe6 fxe6 11.O-O-O Ne5 {Pressure on the f-file and c4.}"
+      },
+      {
+        "name": "Yugoslav 9.Bc4 10.h4",
+        "moves": "1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 g6 6.Be3 Bg7 7.f3 O-O 8.Qd2 Nc6 9.Bc4 Bd7 10.h4 Rc8 11.Bb3 Ne5 12.O-O-O Nc4 13.Bxc4 Rxc4 {Typical Dragon counterplay.}"
+      },
+      {
+        "name": "6.Bc4",
+        "moves": "1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 g6 6.Bc4 Bg7 7.O-O O-O 8.Bb3 Nc6 9.Re1 Na5 {Hunting the bishop.}"
+      },
+      {
+        "name": "6.Bg5",
+        "moves": "1.e4 c5 2.Nf3 d6 3.d4 cxd4 4.Nxd4 Nf6 5.Nc3 g6 6.Bg5 Bg7 7.Qd2 Nc6 8.O-O-O Nxd4 9.Qxd4 O-O {Black is fine.}"
+      }
+    ]
+  },
+  {
+    "id": "anti-sicilians",
+    "ideas": [
+      "Against 2.c3, hit e4 with ...Nf6 at once.",
+      "Accepting the Smith-Morra is fine: develop with ...Nc6, ...d6, ...e6 and stop the e5 break.",
+      "Versus closed setups, the g7 fianchetto plus ...e5 or ...e6 gives a firm grip on d4.",
+      "When White plays dubious gambits, return to the center with ...d5."
+    ],
+    "lines": [
+      {
+        "name": "Alapin 4.Nf3",
+        "moves": "1.e4 c5 2.c3 Nf6 3.e5 Nd5 4.Nf3 Nc6 5.Bc4 Nb6 6.Bb3 c4 7.Bc2 Qc7 {Pressure on e5.}"
+      },
+      {
+        "name": "Alapin 5.cxd4",
+        "moves": "1.e4 c5 2.c3 Nf6 3.e5 Nd5 4.d4 cxd4 5.cxd4 d6 6.Nf3 Nc6 7.Bc4 Nb6 8.Bb5 dxe5 9.Nxe5 Bd7 {Same structure, solid for Black.}"
+      },
+      {
+        "name": "2.Nc3 3.Nge2",
+        "moves": "1.e4 c5 2.Nc3 Nc6 3.Nge2 g6 4.d4 cxd4 5.Nxd4 Bg7 6.Be3 Nf6 {An Accelerated Dragon setup.}"
+      },
+      {
+        "name": "2.d3 King's Indian Attack",
+        "moves": "1.e4 c5 2.d3 Nc6 3.g3 g6 4.Bg2 Bg7 5.f4 d6 6.Nf3 e6 {Solid and flexible.}"
+      },
+      {
+        "name": "2.Qh5?! early queen",
+        "moves": "1.e4 c5 2.Qh5?! Nf6 {Developing with tempo.} 3.Qh4 Nc6 {Black is already better developed.}"
+      },
+      {
+        "name": "Grand Prix 2.f4 d5!",
+        "moves": "1.e4 c5 2.f4 d5! {The best answer: opening the center.} 3.exd5 Nf6 4.Bb5+ Bd7 5.Bxd7+ Qxd7 6.c4 e6 {Black regains the pawn with good play.}"
+      }
+    ]
+  },
+  {
+    "id": "french-defense",
+    "ideas": [
+      "Build the chain e6-d5 and strike its base with ...c5 (and later ...f6).",
+      "In the Advance, pile up on d4 with ...Nc6, ...Qb6 and ...Nge7-f5.",
+      "Your light-squared bishop is the problem piece: trade it or reroute it.",
+      "In the Winawer, ...Bxc3+ doubles White's pawns: counter-attack rather than defend passively."
+    ],
+    "lines": [
+      {
+        "name": "Winawer 4.a3",
+        "moves": "1.e4 e6 2.d4 d5 3.Nc3 Bb4 4.a3 Bxc3+ 5.bxc3 dxe4 6.Qg4 Nf6 7.Qxg7 Rg8 8.Qh6 c5 {Black has counterplay for the pawn.}"
+      },
+      {
+        "name": "Winawer 4.Ne2",
+        "moves": "1.e4 e6 2.d4 d5 3.Nc3 Bb4 4.Ne2 dxe4 5.a3 Be7 6.Nxe4 Nf6 {Comfortable development.}"
+      },
+      {
+        "name": "2.Nf3 Classical",
+        "moves": "1.e4 e6 2.Nf3 d5 3.Nc3 Nf6 4.e5 Nfd7 5.d4 c5 {Hitting the chain.}"
+      },
+      {
+        "name": "Exchange 4.c4",
+        "moves": "1.e4 e6 2.d4 d5 3.exd5 exd5 4.c4 Bb4+ 5.Nc3 Ne7 6.Nf3 O-O {Pressure on the isolated pawn.}"
+      }
+    ]
+  },
+  {
+    "id": "caro-kann",
+    "ideas": [
+      "Support ...d5 with ...c6 and get the light-squared bishop out before ...e6.",
+      "In the Advance, hit the chain with ...c5 and use ...Ne7 and ...Nd7.",
+      "In the Classical, the h-pawn duel (h4 ...h6) keeps your bishop safe.",
+      "Against isolated-pawn positions (Panov), blockade d5 and trade pieces."
+    ],
+    "lines": [
+      {
+        "name": "Advance 4.Nc3 5.g4",
+        "moves": "1.e4 c6 2.d4 d5 3.e5 Bf5 4.Nc3 e6 5.g4 Bg6 6.Nge2 c5 {Striking back in the center.}"
+      },
+      {
+        "name": "Advance 4.h4",
+        "moves": "1.e4 c6 2.d4 d5 3.e5 Bf5 4.h4 h5 {Stopping h5 and g4 ideas.} 5.c4 e6 6.Nc3 Ne7 {Solid development.}"
+      },
+      {
+        "name": "Classical 5.Bd3? Qxd4",
+        "moves": "1.e4 c6 2.d4 d5 3.Nc3 dxe4 4.Nxe4 Bf5 5.Bd3? Qxd4 {The d4 pawn hangs.} 6.Nf3 Qd8 7.Qe2 Nd7 {Black keeps the pawn.}"
+      },
+      {
+        "name": "Accelerated Panov 2.c4",
+        "moves": "1.e4 c6 2.c4 d5 3.exd5 cxd5 4.cxd5 Nf6 5.Nc3 Nxd5 {Free development.}"
+      },
+      {
+        "name": "2.d3",
+        "moves": "1.e4 c6 2.d3 d5 3.Nd2 e5 {Taking the big center.} 4.Ngf3 Bd6 {Comfortable.}"
+      }
+    ]
+  },
+  {
+    "id": "scandinavian",
+    "ideas": [
+      "Challenge e4 at once; after 2.exd5 Qxd5 the queen is safe on a5.",
+      "Develop the light bishop to f5 or g4 before ...e6, then build a ...c6/...e6 triangle.",
+      "Don't lose more time with the queen: develop, then castle.",
+      "Against gambits, take the material and consolidate."
+    ],
+    "lines": [
+      {
+        "name": "4.Bc4",
+        "moves": "1.e4 d5 2.exd5 Qxd5 3.Nc3 Qa5 4.Bc4 Nf6 5.d3 c6 6.Bd2 Qc7 7.Nf3 Bg4 {Comfortable development.}"
+      },
+      {
+        "name": "5.Bd2",
+        "moves": "1.e4 d5 2.exd5 Qxd5 3.Nc3 Qa5 4.d4 Nf6 5.Bd2 c6 6.Bc4 Bf5 {Same harmonious setup.}"
+      },
+      {
+        "name": "6.Ne5 7.Bc4",
+        "moves": "1.e4 d5 2.exd5 Qxd5 3.Nc3 Qa5 4.d4 Nf6 5.Nf3 Bf5 6.Ne5 c6 7.Bc4 e6 8.g4 Bg6 9.h4 Nbd7 {Challenging the strong knight.}"
+      },
+      {
+        "name": "Blackmar-Diemer 2.d4",
+        "moves": "1.e4 d5 2.d4 dxe4 3.Nc3 Nf6 4.f3 exf3 5.Nxf3 Bg4 6.h3 Bxf3 7.Qxf3 c6 {Black keeps the extra pawn.}"
+      }
+    ]
+  },
+  {
+    "id": "alekhine-defense",
+    "ideas": [
+      "Provoke White's pawns forward, then attack the overextended center with ...d6, ...c5 and ...Nc6.",
+      "The knight dance (Nd5-b6) costs time but gains targets.",
+      "In the Modern, pin with ...Bg4 and pressure d4.",
+      "Keep a solid ...e6 setup and break with ...d5 or ...c5 at the right moment."
+    ],
+    "lines": [
+      {
+        "name": "Modern 6.h3",
+        "moves": "1.e4 Nf6 2.e5 Nd5 3.d4 d6 4.Nf3 Bg4 5.Be2 e6 6.h3 Bh5 7.c4 Nb6 8.exd6 cxd6 9.Nc3 Be7 {Solid.}"
+      },
+      {
+        "name": "Modern 6.c4",
+        "moves": "1.e4 Nf6 2.e5 Nd5 3.d4 d6 4.Nf3 Bg4 5.Be2 e6 6.c4 Nb6 7.exd6 cxd6 8.Nc3 Be7 9.Be3 O-O {Comfortable.}"
+      },
+      {
+        "name": "3.Nc3",
+        "moves": "1.e4 Nf6 2.e5 Nd5 3.Nc3 Nxc3 4.dxc3 d6 5.Nf3 Nc6 6.Bb5 Bd7 {Equal.}"
+      },
+      {
+        "name": "4.f4",
+        "moves": "1.e4 Nf6 2.e5 Nd5 3.d4 d6 4.f4 dxe5 5.fxe5 c5 6.Nf3 Nc6 {Undermining the center.}"
+      }
+    ]
+  },
+  {
+    "id": "pirc-defense",
+    "ideas": [
+      "Let White build a big center, then undermine it with ...c5 or ...e5.",
+      "The g7 bishop pressures d4 and the long diagonal.",
+      "Queenside expansion with ...c6 and ...b5 is a common plan against the 150 Attack.",
+      "Castle quickly: Black is solid but must not fall behind in development."
+    ],
+    "lines": [
+      {
+        "name": "Austrian 6.d5",
+        "moves": "1.e4 d6 2.d4 Nf6 3.Nc3 g6 4.f4 Bg7 5.Nf3 c5 6.d5 O-O 7.Bd3 e6 8.O-O exd5 {A Benoni-like structure.}"
+      },
+      {
+        "name": "4.Bg5",
+        "moves": "1.e4 d6 2.d4 Nf6 3.Nc3 g6 4.Bg5 Bg7 5.Qd2 h6 6.Bh4 c6 {Flexible.}"
+      },
+      {
+        "name": "4.Bc4 trap",
+        "moves": "1.e4 d6 2.d4 Nf6 3.Nc3 g6 4.Bc4 Bg7 5.Qe2 Nc6 6.e5 Nxd4! 7.exf6 Nxe2 8.fxg7 Rg8 9.Ngxe2 Rxg7 {Black comes out ahead.}"
+      },
+      {
+        "name": "4.g3",
+        "moves": "1.e4 d6 2.d4 Nf6 3.Nc3 g6 4.g3 Bg7 5.Bg2 O-O 6.Nge2 e5 {The classical break.}"
+      }
+    ]
+  },
+  {
+    "id": "queens-gambit",
+    "ideas": [
+      "Attack d5 with c4: if Black takes, regain the pawn with e3 and Bxc4.",
+      "Pin the f6 knight with Bg5 to increase pressure on d5.",
+      "In Carlsbad structures, the minority attack (b4-b5) creates queenside weaknesses.",
+      "Against sidelines (Chigorin, Albin, Baltic), take the material or the bishop pair and develop calmly."
+    ],
+    "lines": [
+      {
+        "name": "QGD Tartakower 6...h6 7...b6",
+        "moves": "1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Bg5 Be7 5.e3 O-O 6.Nf3 h6 7.Bh4 b6 8.Be2 Bb7 9.Bxf6 Bxf6 10.cxd5 exd5 11.b4 {Minority attack on the queenside.}"
+      },
+      {
+        "name": "QGD Lasker 7...Ne4",
+        "moves": "1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Bg5 Be7 5.e3 O-O 6.Nf3 h6 7.Bh4 Ne4 {The Lasker Defense: trading pieces.} 8.Bxe7 Qxe7 9.cxd5 Nxc3 10.bxc3 exd5 11.Qb3 {Pressure on b7 and d5.}"
+      },
+      {
+        "name": "QGA 5...a6",
+        "moves": "1.d4 d5 2.c4 dxc4 3.e3 Nf6 4.Bxc4 e6 5.Nf3 a6 6.O-O c5 7.a4 {Stopping ...b5.}"
+      },
+      {
+        "name": "QGA 3...Be6?!",
+        "moves": "1.d4 d5 2.c4 dxc4 3.e3 Be6?! {Clinging to the pawn.} 4.Na3 {The pawn on c4 will fall.}"
+      },
+      {
+        "name": "Slav 4...a6 (Chebanenko)",
+        "moves": "1.d4 d5 2.c4 c6 3.Nf3 Nf6 4.Nc3 a6 5.c5 {Locking the queenside.} Bf5 6.Bf4 Nbd7 7.e3 {Solid space advantage.}"
+      },
+      {
+        "name": "Slav 4...g6 (Schlechter)",
+        "moves": "1.d4 d5 2.c4 c6 3.Nf3 Nf6 4.Nc3 g6 5.e3 Bg7 6.Be2 O-O 7.O-O {A small, safe edge.}"
+      },
+      {
+        "name": "Marshall Defense 2...Nf6?!",
+        "moves": "1.d4 d5 2.c4 Nf6?! 3.cxd5 Nxd5 4.e4 Nb6 5.Nc3 {A big, free center.}"
+      },
+      {
+        "name": "Symmetrical 2...c5?!",
+        "moves": "1.d4 d5 2.c4 c5?! 3.cxd5 Nf6 4.e4 Nxe4 5.dxc5 {A healthy extra pawn.}"
+      }
+    ]
+  },
+  {
+    "id": "london-system",
+    "ideas": [
+      "The same setup against almost everything: d4, Bf4, e3, Nf3, c3, Nbd2, Bd3, O-O.",
+      "Develop the dark-squared bishop before e3 so it isn't locked in.",
+      "Keep Bg3 ready: if Black trades on g3, hxg3 opens the h-file.",
+      "Watch b2: against ...c5 and ...Qb6 use Qb3, Qc1 or Nc3 tricks."
+    ],
+    "lines": [
+      {
+        "name": "vs 4...Bd6",
+        "moves": "1.d4 d5 2.Bf4 Nf6 3.e3 e6 4.Nf3 Bd6 {Challenging the bishop.} 5.Bg3 O-O 6.Bd3 c5 7.c3 Nc6 8.Nbd2 {The standard setup.}"
+      },
+      {
+        "name": "vs 3...c5",
+        "moves": "1.d4 d5 2.Bf4 Nf6 3.e3 c5 4.c3 Nc6 5.Nd2 e6 6.Ngf3 Bd6 7.Bg3 O-O 8.Bd3 {Same pyramid.}"
+      },
+      {
+        "name": "vs 3...Bf5",
+        "moves": "1.d4 d5 2.Bf4 Nf6 3.e3 Bf5 4.c4 e6 5.Nc3 Bb4 6.Qb3 Nc6 7.Nf3 {Pressure on b7.}"
+      },
+      {
+        "name": "vs 2...e6 3...b6",
+        "moves": "1.d4 Nf6 2.Bf4 e6 3.e3 b6 4.Nf3 Bb7 5.h3 Be7 6.Bd3 O-O 7.O-O {Solid and simple.}"
+      },
+      {
+        "name": "Englund trap avoided",
+        "moves": "1.d4 e5?! 2.dxe5 Nc6 3.Nf3 Qe7 4.Bf4 Qb4+ 5.Bd2 Qxb2 6.Nc3 {Not 6.Bc3?? Bb4! when ...Qc1# is coming.}"
+      }
+    ]
+  },
+  {
+    "id": "english-opening",
+    "ideas": [
+      "Control d5 from the flank with c4 and Nc3.",
+      "Fianchetto the king's bishop: the g2 bishop dominates the long diagonal.",
+      "Typical plans: Rb1 and b4-b5 on the queenside, or d4 to open the center.",
+      "Treat 1...e5 like a reversed Sicilian — you are a tempo up."
+    ],
+    "lines": [
+      {
+        "name": "1...e5 2...Bb4",
+        "moves": "1.c4 e5 2.Nc3 Bb4 3.Nd5 Be7 4.d4 d6 5.e4 {A big center.}"
+      },
+      {
+        "name": "Four Knights 4...Bb4",
+        "moves": "1.c4 e5 2.Nc3 Nf6 3.Nf3 Nc6 4.g3 Bb4 5.Bg2 O-O 6.O-O e4 7.Ng5 Bxc3 8.bxc3 Re8 9.f3 {Undermining e4.}"
+      },
+      {
+        "name": "1...c5 2...Nf6",
+        "moves": "1.c4 c5 2.Nc3 Nf6 3.g3 d5 4.cxd5 Nxd5 5.Bg2 Nc7 6.Nf3 Nc6 7.O-O {Pressure on the long diagonal.}"
+      },
+      {
+        "name": "1...b6?!",
+        "moves": "1.c4 b6?! 2.Nc3 Bb7 3.e4 e6 4.d4 Bb4 5.Bd3 {A big center.}"
+      },
+      {
+        "name": "1...f5 Dutch style",
+        "moves": "1.c4 f5 2.Nc3 Nf6 3.g3 g6 4.Bg2 Bg7 5.d3 O-O 6.Nf3 d6 7.O-O {Solid.}"
+      }
+    ]
+  },
+  {
+    "id": "catalan",
+    "ideas": [
+      "The g2 bishop X-rays the long diagonal toward b7 and a8.",
+      "If Black takes on c4, regain the pawn with Qa4+ or Qc2 and keep the bishop's pressure.",
+      "In the Closed Catalan, prepare e4 to open the center.",
+      "Slow, positional pressure: the queenside is where Black usually suffers."
+    ],
+    "lines": [
+      {
+        "name": "Open 5...c6",
+        "moves": "1.d4 Nf6 2.c4 e6 3.g3 d5 4.Bg2 dxc4 5.Qa4+ c6 6.Qxc4 b5 7.Qc2 Bb7 8.Nf3 Nbd7 9.O-O {Pressure on c6.}"
+      },
+      {
+        "name": "Closed 6...c6",
+        "moves": "1.d4 Nf6 2.c4 e6 3.g3 d5 4.Bg2 Be7 5.Nf3 O-O 6.O-O c6 7.Qc2 b6 8.Nbd2 Bb7 9.e4 {The central break.}"
+      },
+      {
+        "name": "4...c6",
+        "moves": "1.d4 Nf6 2.c4 e6 3.g3 d5 4.Bg2 c6 5.Nf3 Nbd7 6.O-O Be7 7.Qc2 O-O 8.Nbd2 b6 9.e4 {Same plan.}"
+      },
+      {
+        "name": "3...Bb4+ 4...a5",
+        "moves": "1.d4 Nf6 2.c4 e6 3.g3 Bb4+ 4.Bd2 a5 5.Bg2 d5 6.Nf3 O-O 7.O-O {A comfortable Catalan.}"
+      }
+    ]
+  },
+  {
+    "id": "qgd-black",
+    "ideas": [
+      "Hold d5 firmly with ...e6 and develop: ...Nf6, ...Be7, ...O-O.",
+      "Free your game with ...dxc4 and ...c5, or ...Ne4 trades.",
+      "The c8 bishop is the problem piece: fianchetto it with ...b6 or free it after ...dxc4/...e5.",
+      "In the Exchange, regroup with ...Re8, ...Nf8 and look for kingside play."
+    ],
+    "lines": [
+      {
+        "name": "Tartakower via 5.Nf3",
+        "moves": "1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Bg5 Be7 5.Nf3 O-O 6.e3 h6 7.Bh4 b6 8.Be2 Bb7 9.Bxf6 Bxf6 10.cxd5 exd5 {Same solid structure.}"
+      },
+      {
+        "name": "4.Bg5 7.Bxf6",
+        "moves": "1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Bg5 Be7 5.e3 O-O 6.Nf3 h6 7.Bxf6 Bxf6 8.Rc1 c6 9.Bd3 Nd7 {Solid with the bishop pair.}"
+      },
+      {
+        "name": "4.Bg5 6.Rc1",
+        "moves": "1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.Bg5 Be7 5.e3 O-O 6.Rc1 h6 7.Bh4 b6 8.cxd5 Nxd5 9.Bxe7 Qxe7 10.Nxd5 exd5 {Solid.}"
+      },
+      {
+        "name": "4.e3 quiet",
+        "moves": "1.d4 d5 2.c4 e6 3.Nc3 Nf6 4.e3 Be7 5.Nf3 O-O 6.Bd3 dxc4 7.Bxc4 c5 {Equal.}"
+      }
+    ]
+  },
+  {
+    "id": "slav-black",
+    "ideas": [
+      "Defend d5 with ...c6 while keeping the c8 bishop free.",
+      "Get the bishop to f5 or g4 before playing ...e6.",
+      "If you take on c4, White wins it back — use the time to develop.",
+      "Typical breaks: ...c5 or ...e5 once development is done."
+    ],
+    "lines": [
+      {
+        "name": "5.e3 b5",
+        "moves": "1.d4 d5 2.c4 c6 3.Nf3 Nf6 4.Nc3 dxc4 5.e3 b5 6.a4 b4 7.Na2 e6 8.Bxc4 Nbd7 {Black is fine.}"
+      },
+      {
+        "name": "Exchange 5.Nf3",
+        "moves": "1.d4 d5 2.c4 c6 3.cxd5 cxd5 4.Nc3 Nf6 5.Nf3 Nc6 6.Bf4 Bf5 7.e3 e6 8.Qb3 Bb4 {Symmetrical and solid.}"
+      },
+      {
+        "name": "4.Qc2",
+        "moves": "1.d4 d5 2.c4 c6 3.Nf3 Nf6 4.Qc2 dxc4 5.Qxc4 Bf5 6.Nc3 e6 7.g3 Nbd7 {Comfortable.}"
+      },
+      {
+        "name": "3.e3 Bf5",
+        "moves": "1.d4 d5 2.c4 c6 3.e3 Bf5 4.Nc3 e6 5.Nf3 Nd7 6.Bd3 Bxd3 7.Qxd3 Ngf6 {The problem bishop is traded.}"
+      },
+      {
+        "name": "4.g3",
+        "moves": "1.d4 d5 2.c4 c6 3.Nf3 Nf6 4.g3 Bf5 5.Bg2 e6 6.O-O Be7 7.Nc3 O-O {Solid.}"
+      }
+    ]
+  },
+  {
+    "id": "albin-black",
+    "ideas": [
+      "Sacrifice the e-pawn to plant a cramping pawn on d4.",
+      "Develop quickly: ...Nc6, ...Be6/...Bg4, ...Qd7 and castle long.",
+      "Attack the kingside with ...h5-h4 and ...Bh3 when White fianchettoes.",
+      "Watch for the Lasker Trap after an early e3 — it ends with ...fxg1=N+!"
+    ],
+    "lines": [
+      {
+        "name": "5.a3",
+        "moves": "1.d4 d5 2.c4 e5 3.dxe5 d4 4.Nf3 Nc6 5.a3 Be6 6.Nbd2 Qd7 7.g3 O-O-O 8.Bg2 Nge7 {Same plan.}"
+      },
+      {
+        "name": "3.e3 declined",
+        "moves": "1.d4 d5 2.c4 e5 3.e3 exd4 4.exd4 Nf6 5.Nc3 Be7 {Comfortable equality.}"
+      },
+      {
+        "name": "3.Nc3 exd4",
+        "moves": "1.d4 d5 2.c4 e5 3.Nc3 exd4 4.Qxd4 Nc6 5.Qxd5 Be6 6.Qxd8+ Rxd8 {Active pieces for the pawn.}"
+      }
+    ]
+  },
+  {
+    "id": "kings-indian",
+    "ideas": [
+      "Let White build the center, then strike with ...e5 (or ...c5).",
+      "When the center closes (d5), attack on the kingside: ...Ne8/...Nd7, ...f5, ...f4, ...g5.",
+      "White attacks on the queenside — it's a race, so don't waste tempi.",
+      "The g7 bishop may look blocked, but it springs to life when the center opens."
+    ],
+    "lines": [
+      {
+        "name": "Bayonet 9.b4",
+        "moves": "1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.Nf3 O-O 6.Be2 e5 7.O-O Nc6 8.d5 Ne7 9.b4 {The Bayonet Attack.} Nh5 10.Re1 f5 11.Ng5 Nf6 {Main line.}"
+      },
+      {
+        "name": "Classical 9.Nd2",
+        "moves": "1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.Nf3 O-O 6.Be2 e5 7.O-O Nc6 8.d5 Ne7 9.Nd2 a5 10.a3 Nd7 11.Rb1 f5 12.b4 Kh8 {Typical race.}"
+      },
+      {
+        "name": "Sämisch 7.Nge2",
+        "moves": "1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.f3 O-O 6.Be3 e5 7.Nge2 c6 8.Qd2 Nbd7 {Flexible.}"
+      },
+      {
+        "name": "Sämisch 7.dxe5",
+        "moves": "1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.f3 O-O 6.Be3 e5 7.dxe5 dxe5 8.Qxd8 Rxd8 9.Nd5 Nxd5 10.cxd5 c6 {Equal.}"
+      },
+      {
+        "name": "Makogonov 5.h3",
+        "moves": "1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.h3 O-O 6.Bg5 c5 7.d5 e6 8.Bd3 exd5 9.exd5 Re8+ {Active.}"
+      },
+      {
+        "name": "5.e5?! premature",
+        "moves": "1.d4 Nf6 2.c4 g6 3.Nc3 Bg7 4.e4 d6 5.e5?! dxe5 6.dxe5 Qxd1+ 7.Kxd1 Ng4 {Black wins the e5 pawn.}"
+      }
+    ]
+  },
+  {
+    "id": "nimzo-indian",
+    "ideas": [
+      "Pin the c3 knight to fight for the e4 square.",
+      "Be ready to give the bishop pair (...Bxc3) if it doubles White's pawns.",
+      "Hit doubled c-pawns with ...c5, ...b6, ...Ba6 and ...Nc6-a5.",
+      "Flexible structure: choose between ...d5, ...d6/...e5 or a queenside fianchetto."
+    ],
+    "lines": [
+      {
+        "name": "Rubinstein 5.Nge2",
+        "moves": "1.d4 Nf6 2.c4 e6 3.Nc3 Bb4 4.e3 O-O 5.Ne2 d5 6.a3 Be7 7.cxd5 exd5 8.g3 c6 {Solid.}"
+      },
+      {
+        "name": "Classical 7.Nf3",
+        "moves": "1.d4 Nf6 2.c4 e6 3.Nc3 Bb4 4.Qc2 O-O 5.a3 Bxc3+ 6.Qxc3 b6 7.Nf3 Bb7 8.e3 d6 9.Be2 Nbd7 {Control of e4.}"
+      },
+      {
+        "name": "Classical 5.Nf3 c5",
+        "moves": "1.d4 Nf6 2.c4 e6 3.Nc3 Bb4 4.Qc2 O-O 5.Nf3 c5 6.dxc5 Na6 7.a3 Bxc3+ 8.Qxc3 Nxc5 {Comfortable.}"
+      },
+      {
+        "name": "Classical 5.e4?!",
+        "moves": "1.d4 Nf6 2.c4 e6 3.Nc3 Bb4 4.Qc2 O-O 5.e4 d5 6.e5 Ne4 7.Bd3 c5 {Black strikes first.}"
+      },
+      {
+        "name": "4.g3",
+        "moves": "1.d4 Nf6 2.c4 e6 3.Nc3 Bb4 4.g3 O-O 5.Bg2 d5 6.Nf3 dxc4 7.O-O Nc6 {A Catalan-Nimzo hybrid.}"
+      }
+    ]
+  },
+  {
+    "id": "grunfeld",
+    "ideas": [
+      "Allow White a big center, then attack it with the g7 bishop, ...c5 and ...Nc6.",
+      "In the Exchange, pressure d4 relentlessly: ...Bg4, ...Na5, ...Qa5.",
+      "Trade knights on c3 to weaken White's queenside pawns.",
+      "Activity over structure: open lines suit Black's pieces."
+    ],
+    "lines": [
+      {
+        "name": "Exchange 7.Be3",
+        "moves": "1.d4 Nf6 2.c4 g6 3.Nc3 d5 4.cxd5 Nxd5 5.e4 Nxc3 6.bxc3 Bg7 7.Be3 c5 8.Qd2 Qa5 9.Rc1 cxd4 10.cxd4 Qxd2+ 11.Kxd2 O-O {A comfortable endgame.}"
+      },
+      {
+        "name": "4.Nf3 5.Bf4",
+        "moves": "1.d4 Nf6 2.c4 g6 3.Nc3 d5 4.Nf3 Bg7 5.Bf4 O-O 6.e3 c5 7.dxc5 Qa5 8.Rc1 dxc4 9.Bxc4 Qxc5 {Active pieces.}"
+      },
+      {
+        "name": "4.Nf3 5.e3",
+        "moves": "1.d4 Nf6 2.c4 g6 3.Nc3 d5 4.Nf3 Bg7 5.e3 O-O 6.Be2 c5 7.O-O cxd4 8.exd4 Nc6 {Pressure on d4.}"
+      },
+      {
+        "name": "4.e3",
+        "moves": "1.d4 Nf6 2.c4 g6 3.Nc3 d5 4.e3 Bg7 5.Nf3 O-O 6.Be2 c5 {Striking the center.}"
+      },
+      {
+        "name": "4.Qb3",
+        "moves": "1.d4 Nf6 2.c4 g6 3.Nc3 d5 4.Qb3 dxc4 5.Qxc4 Bg7 6.e4 O-O {Same Russian-system ideas.}"
+      }
+    ]
+  },
+  {
+    "id": "dutch-defense",
+    "ideas": [
+      "Grab e4 with the f-pawn and play for an unbalanced game.",
+      "In the Leningrad, fianchetto and prepare ...e5 with ...Qe8 or ...Nc6.",
+      "Be careful on the e8-h5 diagonal: early Qh5+ tricks exist.",
+      "Kingside play (...g5, ...f4) is a common long-term plan."
+    ],
+    "lines": [
+      {
+        "name": "Leningrad 7.d5",
+        "moves": "1.d4 f5 2.c4 Nf6 3.g3 g6 4.Bg2 Bg7 5.Nf3 O-O 6.O-O d6 7.d5 c5 8.Nc3 Na6 {Knight to c7, then ...b5.}"
+      },
+      {
+        "name": "2.Nf3 move order",
+        "moves": "1.d4 f5 2.Nf3 Nf6 3.g3 g6 4.Bg2 Bg7 5.O-O O-O 6.c4 d6 {The Leningrad again.}"
+      },
+      {
+        "name": "Staunton 4.f3",
+        "moves": "1.d4 f5 2.e4 fxe4 3.Nc3 Nf6 4.f3 d5 5.fxe4 dxe4 6.Bg5 Bf5 {Black keeps the extra pawn.}"
+      },
+      {
+        "name": "2.Bg5 4.e3 (don't take!)",
+        "moves": "1.d4 f5 2.Bg5 h6 3.Bh4 g5 4.e3 Nf6 {Not 4...gxh4?? 5.Qh5#!} 5.Bg3 d6 6.h4 g4 {Black is fine.}"
+      }
+    ]
+  },
+  {
+    "id": "benko-gambit",
+    "ideas": [
+      "Give a queenside pawn to open the a- and b-files for your rooks.",
+      "The g7 bishop rakes the long diagonal toward a1 and b2.",
+      "Typical setup: ...Bxa6, ...d6, ...g6, ...Bg7, ...O-O, ...Nbd7, ...Qa5, ...Rfb8.",
+      "Even in the endgame, your queenside pressure often wins the pawn back."
+    ],
+    "lines": [
+      {
+        "name": "5.e3",
+        "moves": "1.d4 Nf6 2.c4 c5 3.d5 b5 4.cxb5 a6 5.e3 g6 6.Nc3 Bg7 7.Nf3 O-O 8.a4 e6 {Striking the center instead.}"
+      },
+      {
+        "name": "5.f3",
+        "moves": "1.d4 Nf6 2.c4 c5 3.d5 b5 4.cxb5 a6 5.f3 axb5 6.e4 Qa5+ 7.Bd2 b4 {Active queenside play.}"
+      },
+      {
+        "name": "Declined 4.Nf3",
+        "moves": "1.d4 Nf6 2.c4 c5 3.d5 b5 4.Nf3 g6 5.cxb5 a6 6.bxa6 Bg7 {Gambit play regardless.}"
+      },
+      {
+        "name": "Fully accepted 9.g3",
+        "moves": "1.d4 Nf6 2.c4 c5 3.d5 b5 4.cxb5 a6 5.bxa6 g6 6.Nc3 Bxa6 7.e4 Bxf1 8.Kxf1 d6 9.g3 Bg7 10.Kg2 O-O 11.Nf3 Nbd7 {Classic Benko setup.}"
+      }
+    ]
+  },
+  {
+    "id": "budapest-gambit",
+    "ideas": [
+      "Gambit the e-pawn and usually win it back with ...Ng4, ...Nc6 and ...Qe7.",
+      "The check ...Bb4+ disrupts White's development.",
+      "Pile up on e5: knights and queen all attack it.",
+      "Know the smothered mate trap: ...Nd3# when the e2 pawn is pinned."
+    ],
+    "lines": [
+      {
+        "name": "4.e4",
+        "moves": "1.d4 Nf6 2.c4 e5 3.dxe5 Ng4 4.e4 Nxe5 5.f4 Nec6 6.Be3 Bb4+ 7.Nc3 Qe7 8.Bd3 f5 {Hitting the center.}"
+      },
+      {
+        "name": "4.Qd4?!",
+        "moves": "1.d4 Nf6 2.c4 e5 3.dxe5 Ng4 4.Qd4?! d6 5.exd6 Bxd6 {A big lead in development.}"
+      }
+    ]
+  }
+]

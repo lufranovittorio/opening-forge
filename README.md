@@ -6,10 +6,11 @@ An interactive website for learning chess openings, variation by variation.
 
 ## Features
 
-- **33 openings, 200+ book lines.** Italian, Ruy Lopez, Scotch, King's Gambit, Vienna, Evans, Danish, Queen's Gambit, London, English, Catalan, Sicilian (Najdorf, Dragon, Anti-Sicilians), French, Caro-Kann, Scandinavian, Alekhine, Pirc, King's Indian, Nimzo-Indian, Grünfeld, Dutch, QGD, Slav, Benko, Budapest, Albin, Stafford, Petrov, Two Knights and more.
+- **54 openings, 460+ book lines.** For White: Italian, Ruy Lopez, Scotch, Four Knights, Bishop's Opening, King's Gambit, Vienna, Evans, Danish, Smith-Morra, Open Sicilian, the Advance French and Caro-Kann, Queen's Gambit, London, Colle, Trompowsky, Catalan, English, Réti, King's Indian Attack and Bird's. For Black: Sicilian (Najdorf, Dragon, Sveshnikov, Accelerated Dragon, Anti-Sicilians), French, Caro-Kann, Scandinavian, Alekhine, Pirc, Modern, the Italian and Berlin as Black, Petrov, Two Knights, Stafford, QGD, Slav, Albin, Black vs the London and the English, King's Indian, Nimzo-Indian, Queen's Indian, Bogo-Indian, Grünfeld, Benoni, Benko, Dutch, Budapest and Englund.
 - **The opponent tries everything.** Main lines, sidelines, gambits, and *bad* moves too: Damiano, Latvian, Blackburne Shilling, Legal's Mate, the Lasker Trap, the Budapest smothered mate and others.
 - **Every move is flagged.** Brilliant `!!`, Best ★, Book 📖, Interesting `!?`, Inaccuracy `?!`, Mistake `?`, Blunder `??`. When your opponent goes wrong, you have to find the best punishment.
 - **Learn an opening.** Pick an opening from the library. New lines start in study mode, with an arrow and an explanation for each move. After that you drill them from memory.
+- **🧠 Understand it (free play).** Switch the trainer to this tab to play the opening against an opponent that mixes book moves with engine and *random* moves. Stockfish 18 (running in your browser) grades each of your moves: Best / Excellent / Good are accepted, anything weaker is taken back with an explanation of *why* it's wrong (hangs a piece, allows mate, ignores the opponent's mistake, early queen, moving a piece twice, flank pawns before development...). Accepted moves are tagged with the concept behind them (development, center, king safety, fianchetto, threats...). You choose how random the opponent is, how strict the grading is, and the game length. Each opening also has a 💡 *Key ideas* panel.
 - **Random opening (forced).** Get a random opening and stay locked into it until you have learned every line.
 - **Hint settings.** *Show next move*: Auto / Always / Off, plus *Explain the next move before I play it*. There's also a 💡 Hint button (key `H`).
 - Wrong moves are taken back. After two misses the book move is revealed. A line only counts as learned after a clean run, and lines you got wrong come back for review.
@@ -36,7 +37,7 @@ Openings live in `data/*.json`. Each line is written in plain move notation, wit
   "moves": "1.e4 e5 2.Nf3 Nc6 3.Bc4 d6 4.Nc3 Bg4 5.h3 Bh5? 6.Nxe5! Bxd1?? 7.Bxf7+ Ke7 8.Nd5# {Checkmate!}" }
 ```
 
-All lines of an opening are merged into one move tree. Opponent moves annotated `?!`, `?` or `??` show up as Inaccuracy, Mistake or Blunder, and your reply to them counts as Best. Validate the data with [python-chess](https://pypi.org/project/chess/):
+All lines of an opening are merged into one move tree. An entry with only `id` and `lines` (and optionally `ideas`) adds lines to an opening defined in an earlier file, as `data/extras.json` does. Opponent moves annotated `?!`, `?` or `??` show up as Inaccuracy, Mistake or Blunder, and your reply to them counts as Best. Validate the data with [python-chess](https://pypi.org/project/chess/):
 
 ```bash
 pip install chess
@@ -49,5 +50,6 @@ The validator checks that every move is legal and spelled in canonical SAN, that
 
 - Board: [chessground](https://github.com/lichess-org/chessground) (GPL-3.0) with the cburnett piece set
 - Rules: [chess.js](https://github.com/jhlywa/chess.js) (BSD-2)
+- Engine: [Stockfish 18](https://stockfishchess.org/) lite single-threaded WASM build from [stockfish.js](https://github.com/nmrugg/stockfish.js) (GPL-3.0), in `vendor/stockfish/`
 
-Because chessground is GPL-3.0, this project is released under the GPL-3.0 as well.
+Because chessground and Stockfish are GPL-3.0, this project is released under the GPL-3.0 as well.

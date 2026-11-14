@@ -73,6 +73,8 @@ export function classify(node, learner) {
 export const BADGES = {
   brilliant:   { glyph: '!!', label: 'Brilliant' },
   best:        { glyph: '★',  label: 'Best' },
+  excellent:   { glyph: '👍', label: 'Excellent' },
+  good:        { glyph: '✓',  label: 'Good' },
   book:        { glyph: '📖', label: 'Book' },
   interesting: { glyph: '!?', label: 'Interesting' },
   inaccuracy:  { glyph: '?!', label: 'Inaccuracy' },

@@ -5,6 +5,7 @@ const defaults = () => ({
   lines: {},          // lineKey -> { status, seen, clean, fails, last }
   forced: null,       // { id, started } while a random challenge is active
   completedChallenges: 0,
+  free: {},          // openingId -> { games, best, last } for free-play mode
   settings: { mode: 'auto', sound: true },
   last: null,
 });
@@ -56,4 +57,15 @@ export function openingProgress(op) {
 export function resetOpening(op) {
   for (const l of op.lines) delete state.lines[l.key];
   save();
+}
+
+export function recordFree(id, acc) {
+  state.free = state.free || {};
+  const r = state.free[id] || { games: 0, best: 0, last: 0 };
+  r.games++;
+  r.last = acc;
+  r.best = Math.max(r.best, acc);
+  state.free[id] = r;
+  save();
+  return r;
 }
